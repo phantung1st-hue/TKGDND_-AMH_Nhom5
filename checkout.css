@@ -1,0 +1,64 @@
+/* GREENMART - checkout.css */
+
+/* ===== thanh-toan.css ===== */
+/* =========================================================
+   TRANG THANH TOÁN - GREENMART
+   ========================================================= */
+
+#vung-thanh-toan { padding-bottom: 72px; }
+.tieu-de-trang-thanh-toan { display:flex; justify-content:space-between; align-items:flex-end; gap:30px; margin:16px 0 34px; }
+.tieu-de-trang-thanh-toan h1 { font-size:34px; margin:8px 0 6px; }
+.tieu-de-trang-thanh-toan p { margin:0; color:var(--mau-chu-phu); }
+.nhan-an-toan { display:inline-flex; padding:6px 10px; border-radius:999px; background:var(--mau-xanh-nhat); color:var(--mau-xanh-dam); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; }
+.cac-buoc-thanh-toan { display:flex; align-items:center; gap:10px; white-space:nowrap; font-size:13px; color:var(--mau-chu-nhat); }
+.cac-buoc-thanh-toan i { width:34px; height:1px; background:var(--mau-vien-dam); }
+.cac-buoc-thanh-toan .hoan-thanh,.cac-buoc-thanh-toan .hien-tai { color:var(--mau-xanh-dam); font-weight:700; }
+
+.bo-cuc-thanh-toan { display:grid; grid-template-columns:minmax(0,1fr) 410px; gap:32px; align-items:start; }
+.khoi-thanh-toan { background:var(--mau-trang); border:1px solid var(--mau-vien); border-radius:18px; padding:26px; margin-bottom:20px; box-shadow:var(--do-bong-sm); }
+.khoi-thanh-toan-tieu-de { display:flex; align-items:flex-start; gap:14px; margin-bottom:24px; }
+.khoi-thanh-toan-tieu-de h2 { font-size:19px; margin:0 0 4px; }
+.khoi-thanh-toan-tieu-de p { margin:0; color:var(--mau-chu-nhat); font-size:13px; }
+.so-buoc { width:30px; height:30px; border-radius:50%; background:var(--mau-xanh); color:white; display:grid; place-items:center; font-weight:800; flex:0 0 auto; }
+.bat-buoc { color:var(--mau-do); }.khong-bat-buoc { color:var(--mau-chu-nhat); font-weight:400; font-size:12px; }
+.luoi-form-2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }.luoi-form-3 { display:grid; grid-template-columns:1.05fr 1fr 1fr; gap:14px; }
+.luu-thong-tin { margin-top:-4px; }.dem-ky-tu { text-align:right; font-size:12px; color:var(--mau-chu-nhat); margin-top:5px; }
+
+.luoi-van-chuyen { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.the-lua-chon,.the-phuong-thuc { display:flex; align-items:center; gap:13px; border:1.5px solid var(--mau-vien-dam); border-radius:14px; padding:17px; cursor:pointer; transition:.2s ease; background:#fff; }
+.the-lua-chon:hover,.the-phuong-thuc:hover { border-color:var(--mau-xanh); transform:translateY(-1px); }
+.the-lua-chon.dang-chon,.the-phuong-thuc.dang-chon { border-color:var(--mau-xanh); background:var(--mau-xanh-nhat); box-shadow:0 0 0 3px rgba(30,123,52,.08); }
+.the-lua-chon input,.the-phuong-thuc input { position:absolute; opacity:0; pointer-events:none; }
+.radio-tuy-chinh { width:19px; height:19px; border:1.5px solid var(--mau-vien-dam); border-radius:50%; flex:0 0 auto; position:relative; background:#fff; }
+.dang-chon>.radio-tuy-chinh { border-color:var(--mau-xanh); }.dang-chon>.radio-tuy-chinh:after { content:""; position:absolute; inset:4px; border-radius:50%; background:var(--mau-xanh); }
+.noi-dung-lua-chon { display:flex; flex-direction:column; flex:1; min-width:0; }.noi-dung-lua-chon strong { font-size:14px; }.noi-dung-lua-chon small { color:var(--mau-chu-nhat); margin-top:3px; line-height:1.35; }
+.the-lua-chon>b { color:var(--mau-xanh-dam); font-size:14px; }.icon-phuong-thuc { width:38px; height:38px; border-radius:10px; background:var(--mau-nen-phu); display:grid; place-items:center; font-size:19px; }
+.danh-sach-thanh-toan { display:flex; flex-direction:column; gap:11px; }
+.chi-tiet-thanh-toan { margin-top:12px; padding:15px 17px; border-radius:12px; background:var(--mau-nen-phu); border-left:3px solid var(--mau-xanh); font-size:13px; }.chi-tiet-thanh-toan p { margin:4px 0 0; color:var(--mau-chu-phu); }
+.thong-bao-mien-phi { padding:11px 14px; margin:-4px 0 14px; border-radius:10px; background:var(--mau-xanh-nhat); color:var(--mau-xanh-dam); font-size:13px; font-weight:600; }
+
+.khoi-tom-tat-don { background:var(--mau-trang); border:1px solid var(--mau-vien); border-radius:18px; padding:24px; position:sticky; top:92px; box-shadow:var(--do-bong-md); }
+.tieu-de-tom-tat { display:flex; justify-content:space-between; align-items:center; padding-bottom:17px; border-bottom:1px solid var(--mau-vien); }.tieu-de-tom-tat h2 { font-size:19px; margin:0; }.tieu-de-tom-tat a { color:var(--mau-xanh-dam); font-size:13px; font-weight:700; }
+.danh-sach-tom-tat { max-height:310px; overflow:auto; padding:18px 4px 2px 0; }
+.dong-san-pham-tom-tat { display:flex; align-items:center; gap:12px; margin-bottom:15px; }.dong-san-pham-tom-tat .khung-anh { width:58px; height:58px; flex:0 0 auto; position:relative; border:1px solid var(--mau-vien); border-radius:10px; overflow:visible; }.dong-san-pham-tom-tat img { width:100%; height:100%; object-fit:cover; border-radius:9px; }.dong-san-pham-tom-tat>strong { font-size:13px; white-space:nowrap; }
+.the-so-luong-mini { position:absolute; top:-7px; right:-7px; width:21px; height:21px; border-radius:50%; background:var(--mau-xanh-dam); color:#fff; border:2px solid #fff; display:grid; place-items:center; font-size:11px; font-weight:800; }
+.dong-san-pham-tom-tat-info { flex:1; min-width:0; }.dong-san-pham-tom-tat-info h4 { font-size:13px; margin:0 0 4px; line-height:1.4; }.dong-san-pham-tom-tat-info .don-vi { color:var(--mau-chu-nhat); font-size:12px; }
+.hang-ma-giam-gia { display:flex; gap:8px; margin:18px 0 5px; }.hang-ma-giam-gia .o-nhap { height:44px; font-size:13px; }.hang-ma-giam-gia .nut { flex:0 0 auto; }
+.thong-bao-ma { min-height:18px; margin:3px 0 14px; font-size:12px; }.thong-bao-ma.hop-le { color:var(--mau-xanh); }.thong-bao-ma.loi { color:var(--mau-do); }
+.bang-tien { border-top:1px solid var(--mau-vien); padding-top:14px; }.bang-tien>div { display:flex; justify-content:space-between; gap:20px; margin:11px 0; font-size:14px; }.bang-tien .giam-gia strong { color:var(--mau-xanh); }.bang-tien .tong-thanh-toan { border-top:1px dashed var(--mau-vien-dam); padding-top:15px; margin-top:15px; align-items:center; }.bang-tien .tong-thanh-toan span { font-weight:700; }.bang-tien .tong-thanh-toan strong { font-size:22px; color:var(--mau-cam-dam); }
+.nut-dat-hang { margin-top:15px; height:52px; }.nut-dat-hang:disabled { opacity:.65; cursor:not-allowed; }.cam-ket-thanh-toan { display:grid; gap:7px; margin:16px 0; padding:13px; border-radius:10px; background:var(--mau-nen-phu); font-size:12px; color:var(--mau-chu-phu); }.ghi-chu-dieu-khoan { margin:0; text-align:center; font-size:11.5px; line-height:1.55; color:var(--mau-chu-nhat); }.ghi-chu-dieu-khoan a { color:var(--mau-xanh-dam); text-decoration:underline; }
+
+.trang-thai-thanh-toan { max-width:760px; margin:42px auto 0; text-align:center; background:#fff; border:1px solid var(--mau-vien); border-radius:22px; padding:48px 36px; box-shadow:var(--do-bong-md); }.bieu-tuong-trang-thai { width:74px; height:74px; margin:0 auto 18px; border-radius:50%; background:var(--mau-xanh-nhat); color:var(--mau-xanh); display:grid; place-items:center; }.bieu-tuong-trang-thai svg { width:42px; height:42px; }.trang-thai-thanh-toan h1 { font-size:30px; margin:12px 0 10px; }.trang-thai-thanh-toan>p { color:var(--mau-chu-phu); max-width:600px; margin:0 auto 25px; line-height:1.7; }
+.the-xac-nhan-don { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--mau-vien); border:1px solid var(--mau-vien); border-radius:14px; overflow:hidden; text-align:left; margin:24px 0; }.the-xac-nhan-don>div { background:#fff; padding:17px; display:flex; flex-direction:column; gap:5px; }.the-xac-nhan-don span { font-size:12px; color:var(--mau-chu-nhat); }.huong-dan-sau-dat { text-align:left; padding:16px; border-radius:12px; background:var(--mau-cam-nhat); margin-bottom:22px; }.huong-dan-sau-dat p { margin:5px 0 0; }.nhom-nut-hoan-tat { display:flex; justify-content:center; gap:10px; }
+
+@media(max-width:1000px){.bo-cuc-thanh-toan{grid-template-columns:1fr}.khoi-tom-tat-don{position:static}.tieu-de-trang-thanh-toan{align-items:flex-start;flex-direction:column}.cac-buoc-thanh-toan{align-self:stretch;justify-content:center}}
+@media(max-width:700px){#vung-thanh-toan{padding-bottom:45px}.tieu-de-trang-thanh-toan h1{font-size:28px}.cac-buoc-thanh-toan{font-size:11px;gap:6px}.cac-buoc-thanh-toan i{width:18px}.khoi-thanh-toan,.khoi-tom-tat-don{padding:18px;border-radius:14px}.luoi-form-2,.luoi-form-3,.luoi-van-chuyen{grid-template-columns:1fr}.the-xac-nhan-don{grid-template-columns:1fr}.nhom-nut-hoan-tat{flex-direction:column}.trang-thai-thanh-toan{padding:34px 18px}.trang-thai-thanh-toan h1{font-size:25px}}
+
+
+/* Chi tiết phương thức thanh toán */
+.thong-tin-chuyen-khoan{display:grid;grid-template-columns:120px 1fr;gap:8px 14px;margin-top:12px;padding:14px;background:#fff;border:1px solid var(--mau-vien);border-radius:10px}.thong-tin-chuyen-khoan span{color:var(--mau-chu-phu)}
+.luu-y-demo{margin-top:10px!important;font-size:12px;color:#8a5a00!important}
+.lua-chon-vi{display:flex;gap:10px;margin:12px 0}.lua-chon-vi label{cursor:pointer}.lua-chon-vi input{position:absolute;opacity:0}.lua-chon-vi span{display:inline-block;padding:8px 18px;border:1px solid var(--mau-vien-dam);border-radius:999px;background:#fff;font-weight:700}.lua-chon-vi input:checked+span{border-color:var(--mau-xanh);color:var(--mau-xanh);background:var(--mau-xanh-nhat)}
+.khung-qr-thanh-toan{display:flex;align-items:center;gap:18px;padding:14px;background:#fff;border:1px solid var(--mau-vien);border-radius:12px}.khung-qr-thanh-toan img{width:150px;height:150px;object-fit:contain;border:8px solid #fff;box-shadow:0 2px 14px rgba(0,0,0,.08)}.khung-qr-thanh-toan p{margin:6px 0!important}.khung-qr-thanh-toan small{color:var(--mau-chu-phu)}
+.form-the-thanh-toan{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.form-the-thanh-toan .full{grid-column:1/-1}.form-the-thanh-toan .nhom-truong{margin:0}.form-the-thanh-toan .thong-diep-loi{color:#c62828;font-size:12px;margin-top:5px}
+@media(max-width:640px){.khung-qr-thanh-toan{align-items:flex-start;flex-direction:column}.form-the-thanh-toan{grid-template-columns:1fr}.form-the-thanh-toan .full{grid-column:auto}.thong-tin-chuyen-khoan{grid-template-columns:1fr}}

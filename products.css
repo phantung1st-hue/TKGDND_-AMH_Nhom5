@@ -1,0 +1,210 @@
+/* GREENMART - products.css */
+
+/* ===== san-pham.css ===== */
+/* =========================================================
+   TRANG DANH MỤC SẢN PHẨM
+   ========================================================= */
+
+.tieu-de-trang {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.tieu-de-trang h1 {
+  margin-bottom: 4px;
+}
+
+.dem-ket-qua {
+  font-size: 14px;
+  color: var(--mau-chu-nhat);
+}
+
+.o-sap-xep {
+  width: 210px;
+}
+
+.bo-cuc-san-pham {
+  display: grid;
+  grid-template-columns: 268px 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+/* ---- Bộ lọc bên trái ---- */
+.khoi-loc {
+  background: var(--mau-trang);
+  border: 1px solid var(--mau-vien);
+  border-radius: var(--bo-goc-md);
+  padding: 24px;
+}
+
+.khoi-loc + .khoi-loc {
+  margin-top: 20px;
+}
+
+.khoi-loc-tieu-de {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.khoi-loc-tieu-de svg {
+  width: 18px;
+  height: 18px;
+  color: var(--mau-xanh);
+}
+
+.danh-sach-loc li {
+  margin-bottom: 14px;
+}
+
+.danh-sach-loc li:last-child {
+  margin-bottom: 0;
+}
+
+.khoi-loc hr {
+  border: none;
+  border-top: 1px solid var(--mau-vien);
+  margin: 20px 0;
+}
+
+.khoi-loc .o-check,
+.khoi-loc .o-radio {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.khoi-loc .o-check span,
+.khoi-loc .o-radio span {
+  flex: 1;
+}
+
+.hang-cong-tac {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.hang-cong-tac:last-child {
+  margin-bottom: 0;
+}
+
+.hang-cong-tac span {
+  font-size: 14.5px;
+  font-weight: 500;
+}
+
+/* ---- Khoảng giá ---- */
+.khoang-gia-nhan {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13.5px;
+  color: var(--mau-chu-phu);
+  margin-top: 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: var(--mau-xanh);
+}
+
+/* ---- Đánh giá sao ---- */
+.danh-gia-sao {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--mau-cam);
+  cursor: pointer;
+}
+
+.danh-gia-sao svg {
+  width: 17px;
+  height: 17px;
+}
+
+.danh-gia-sao span {
+  margin-left: 6px;
+  color: var(--mau-chu-phu);
+  font-size: 13.5px;
+}
+
+.nut-xoa-loc {
+  width: 100%;
+  text-align: center;
+  font-size: 13.5px;
+  color: var(--mau-chu-nhat);
+  font-weight: 600;
+  margin-top: 4px;
+  padding: 8px;
+}
+
+.nut-xoa-loc:hover {
+  color: var(--mau-do);
+}
+
+/* ---- Lưới sản phẩm ---- */
+.luoi-san-pham {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.trang-thai-rong {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--mau-chu-nhat);
+}
+
+/* ---- Nút mở bộ lọc trên di động ---- */
+.nut-mo-loc-di-dong {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .bo-cuc-san-pham {
+    grid-template-columns: 1fr;
+  }
+
+  .khoi-loc-wrap {
+    display: none;
+  }
+
+  .khoi-loc-wrap.mo {
+    display: block;
+  }
+
+  .nut-mo-loc-di-dong {
+    display: inline-flex;
+  }
+
+  .luoi-san-pham {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .luoi-san-pham {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .tieu-de-trang {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .o-sap-xep {
+    width: 100%;
+  }
+}
