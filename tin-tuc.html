@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenMart | Tin Tức</title>
+    <meta name="description" content="Tin tức GreenMart về dinh dưỡng, mẹo hay và hành trình xanh từ nông trại đến bàn ăn." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="inner topbar-inner">
+          <a class="brand" href="index.html">
+            <span class="brand-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5v-9Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                <path d="M9 10.5c0 1.7 1.8 3 3 3s3-1.3 3-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </span>
+            <span class="brand-text">GreenMart</span>
+          </a>
+
+          <button class="mobile-toggle" type="button" aria-label="Mở menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="topnav" id="topnav" aria-label="Điều hướng chính">
+            <a class="nav-link" href="index.html">Trang chủ</a>
+            <a class="nav-link" href="index.html#products">Sản phẩm</a>
+            <a class="nav-link active" href="tin-tuc.html">Tin tức</a>
+            <a class="nav-link" href="#footer">Liên hệ</a>
+          </nav>
+
+          <div class="top-actions">
+            <label class="search-pill" aria-label="Tìm kiếm">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="m21 21-4.2-4.2m1.7-5.3a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+              <input type="text" placeholder="Bạn đang tìm sản phẩm gì?" />
+            </label>
+            <div class="icon-group">
+              <button class="icon-btn" type="button" aria-label="Ưa thích">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 20s-6-3.4-6-8.3A4.3 4.3 0 0 1 10 7c1.2 0 2 .7 2 1.7 0-1 1-1.7 2-1.7a4.3 4.3 0 0 1 4 4.7C18 16.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="icon-btn" type="button" aria-label="Giỏ hàng">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M3 4h2l2.4 9.2a1 1 0 0 0 1 .8h8.3a1 1 0 0 0 1-.8L17 7H7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="10" cy="19" r="1.5" fill="currentColor" />
+                  <circle cx="17" cy="19" r="1.5" fill="currentColor" />
+                </svg>
+              </button>
+              <button class="icon-btn" type="button" aria-label="Tài khoản">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8" />
+                  <path d="M5 19c1.3-3.3 3.6-5 7-5s5.7 1.7 7 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="news-page-main">
+        <section class="page-breadcrumb inner" aria-label="Đường dẫn">
+          <a href="index.html">Trang chủ</a>
+          <span>/</span>
+          <span>Tin tức</span>
+        </section>
+
+        <section class="news-hero" aria-label="Tin tức nổi bật">
+          <div class="inner">
+            <div class="news-hero-card">
+              <img src="https://www.figma.com/api/mcp/asset/6a004c3e-9051-4c25-b71b-205bab6d25e4" alt="Hành trình xanh từ nông trại đến bàn ăn" />
+              <div class="news-hero-overlay"></div>
+              <div class="news-hero-content">
+                <span class="news-hero-pill">NỔI BẬT</span>
+                <h1>Hành trình xanh: Từ nông trại đến bàn ăn của bạn</h1>
+                <p>Khám phá cách GreenMart tuyển chọn những nguồn nguyên liệu sạch nhất để đảm bảo sức khỏe tối ưu cho gia đình Việt.</p>
+                <a class="btn btn-primary" href="#">Xem bài viết</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="news-content" aria-label="Danh sách bài viết">
+          <div class="inner news-layout">
+            <div class="news-main">
+              <div class="section-heading">
+                <h2>Bài viết mới nhất</h2>
+                <div class="filters">
+                  <a class="active" href="#">Tất cả</a>
+                  <a href="#">Dinh dưỡng</a>
+                  <a href="#">Mẹo hay</a>
+                </div>
+              </div>
+
+              <div class="news-post-grid">
+                <article class="news-post-card">
+                  <div class="news-post-media">
+                    <img src="https://www.figma.com/api/mcp/asset/a1e7078c-e837-47b6-9bdd-2c1e4913d605" alt="Bơ sáp trong thực đơn hằng ngày" />
+                    <span class="news-post-tag">Dinh dưỡng</span>
+                  </div>
+                  <div class="news-post-body">
+                    <div class="news-post-meta">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8" />
+                        <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                      </svg>
+                      <span>15 Tháng 5, 2024</span>
+                    </div>
+                    <h3>10 lợi ích không ngờ của bơ sáp trong thực đơn hằng ngày</h3>
+                    <p>Bơ không chỉ ngon mà còn chứa một lượng lớn chất béo lành mạnh tốt cho tim mạch và làn da của bạn...</p>
+                    <a href="#">Đọc thêm</a>
+                  </div>
+                </article>
+
+                <article class="news-post-card">
+                  <div class="news-post-media">
+                    <img src="https://www.figma.com/api/mcp/asset/ce294f88-b5c6-4c16-9bcf-137d0c84692e" alt="Bảo quản rau củ tươi lâu" />
+                    <span class="news-post-tag">Mẹo hay</span>
+                  </div>
+                  <div class="news-post-body">
+                    <div class="news-post-meta">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8" />
+                        <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                      </svg>
+                      <span>12 Tháng 5, 2024</span>
+                    </div>
+                    <h3>Cách bảo quản rau củ tươi lâu trong tủ lạnh suốt cả tuần</h3>
+                    <p>Mẹo nhỏ giúp rau xanh không bị héo và giữ nguyên hàm lượng vitamin khi lưu trữ trong thời gian dài...</p>
+                    <a href="#">Đọc thêm</a>
+                  </div>
+                </article>
+
+                <article class="news-post-card">
+                  <div class="news-post-media">
+                    <img src="https://www.figma.com/api/mcp/asset/6e9cefea-e3cd-4841-a383-e9dc9549e824" alt="Công thức salad ức gà" />
+                    <span class="news-post-tag">Nấu ăn</span>
+                  </div>
+                  <div class="news-post-body">
+                    <div class="news-post-meta">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8" />
+                        <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                      </svg>
+                      <span>10 Tháng 5, 2024</span>
+                    </div>
+                    <h3>Công thức salad ức gà sốt mè rang cho bữa trưa nhanh gọn</h3>
+                    <p>Chỉ với 15 phút chuẩn bị, bạn đã có ngay một bữa ăn giàu đạm và đầy đủ chất xơ cho ngày làm việc...</p>
+                    <a href="#">Đọc thêm</a>
+                  </div>
+                </article>
+
+                <article class="news-post-card">
+                  <div class="news-post-media">
+                    <img src="https://www.figma.com/api/mcp/asset/b2541917-4e6b-4314-9d6c-e8b46cc8c6a8" alt="Nước ép rau quả xanh" />
+                    <span class="news-post-tag">Dinh dưỡng</span>
+                  </div>
+                  <div class="news-post-body">
+                    <div class="news-post-meta">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8" />
+                        <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                      </svg>
+                      <span>08 Tháng 5, 2024</span>
+                    </div>
+                    <h3>Nước ép Green Detox: Thanh lọc cơ thể một cách tự nhiên</h3>
+                    <p>Tìm hiểu lý do tại sao nước ép rau quả xanh lại trở thành xu hướng chăm sóc sức khỏe hàng đầu hiện nay...</p>
+                    <a href="#">Đọc thêm</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="pagination" aria-label="Phân trang">
+                <a class="page-arrow" href="#" aria-label="Trang trước">←</a>
+                <a class="page-number active" href="#">1</a>
+                <a class="page-number" href="#">2</a>
+                <a class="page-number" href="#">3</a>
+                <span class="page-dots">...</span>
+                <a class="page-number" href="#">12</a>
+                <a class="page-arrow" href="#" aria-label="Trang tiếp theo">→</a>
+              </div>
+            </div>
+
+            <aside class="news-sidebar">
+              <div class="sidebar-card">
+                <h3>Tìm kiếm</h3>
+                <label class="sidebar-search" aria-label="Tìm tin tức">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="m21 21-4.2-4.2m1.7-5.3a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                  </svg>
+                  <input type="text" placeholder="Tìm tin tức..." />
+                </label>
+              </div>
+
+              <div class="sidebar-card">
+                <h3>Danh mục tin tức</h3>
+                <ul class="category-list">
+                  <li><a href="#">Dinh dưỡng <span>12</span></a></li>
+                  <li><a href="#">Mẹo hay <span>08</span></a></li>
+                  <li><a href="#">Nấu ăn <span>15</span></a></li>
+                  <li><a href="#">Sống xanh <span>05</span></a></li>
+                </ul>
+              </div>
+
+              <div class="sidebar-card">
+                <h3>Bài viết mới nhất</h3>
+                <div class="recent-post-list">
+                  <a class="recent-post-item" href="#">
+                    <img src="https://www.figma.com/api/mcp/asset/0e680ab6-cc48-40eb-82d4-46dc2fc795f3" alt="Rau Kale siêu thực phẩm" />
+                    <div>
+                      <h4>Rau Kale - Siêu thực phẩm từ thiên nhiên</h4>
+                      <span>16 Tháng 5, 2024</span>
+                    </div>
+                  </a>
+                  <a class="recent-post-item" href="#">
+                    <img src="https://www.figma.com/api/mcp/asset/1ffaf0e1-9e64-4778-b820-86a5ba7ca81f" alt="Công dụng bất ngờ từ nấm organic" />
+                    <div>
+                      <h4>Công dụng bất ngờ từ các loại nấm organic</h4>
+                      <span>14 Tháng 5, 2024</span>
+                    </div>
+                  </a>
+                  <a class="recent-post-item" href="#">
+                    <img src="https://www.figma.com/api/mcp/asset/07850900-3591-4565-927c-f620eec94416" alt="Tối ưu bữa ăn người bận rộn" />
+                    <div>
+                      <h4>Tối ưu bữa ăn cho người bận rộn và cần sức khỏe</h4>
+                      <span>11 Tháng 5, 2024</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="newsletter-card">
+                <h3>Đăng ký nhận tin</h3>
+                <p>Nhận những bài viết mới nhất về dinh dưỡng và mẹo sống xanh mỗi tuần.</p>
+                <form class="newsletter-form">
+                  <input type="email" name="email" placeholder="Email của bạn" autocomplete="email" required />
+                  <button type="submit">Đăng ký ngay</button>
+                </form>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="footer">
+        <div class="inner footer-grid">
+          <div class="footer-column">
+            <h3>GreenMart</h3>
+            <p>
+              Cung cấp thực phẩm sạch, an toàn và chất lượng cao cho mọi gia đình Việt. Sứ mệnh của chúng tôi là mang thiên nhiên đến gần hơn với bữa ăn của bạn.
+            </p>
+            <div class="social-links" aria-label="Mạng xã hội">
+              <a href="#" aria-label="Facebook">f</a>
+              <a href="#" aria-label="Instagram">i</a>
+              <a href="#" aria-label="YouTube">▶</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Về chúng tôi</h4>
+            <a href="#">Câu chuyện thương hiệu</a>
+            <a href="#">Quy trình kiểm định</a>
+            <a href="#">Đối tác trang trại</a>
+            <a href="#">Tuyển dụng</a>
+          </div>
+          <div class="footer-column">
+            <h4>Hỗ trợ khách hàng</h4>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="#">Điều khoản sử dụng</a>
+            <a href="#">Chính sách giao hàng</a>
+            <a href="#">Liên hệ hỗ trợ</a>
+          </div>
+          <div class="footer-column">
+            <h4>Bản tin</h4>
+            <p>Đăng ký nhận thông tin ưu đãi và mẹo vặt sức khỏe hàng tuần.</p>
+            <form class="newsletter">
+              <input type="email" placeholder="Email của bạn" />
+              <button type="submit">Gửi</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+
+      <button class="fab" type="button" aria-label="Nhắn tin hỗ trợ">✦</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
