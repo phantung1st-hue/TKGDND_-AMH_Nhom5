@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sản phẩm sạch - GreenMart</title>
+<meta name="description" content="Khám phá đầy đủ các sản phẩm thực phẩm sạch, hữu cơ của GreenMart: rau củ, trái cây, thịt cá, trứng sữa và nhiều hơn nữa.">
+<link rel="icon" href="assets/images/logo/favicon.png">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+
+
+<!-- ================= HEADER ================= -->
+<header class="dau-trang">
+  <div class="container">
+    <a href="index.html" class="logo-thuong-hieu">
+      <img src="assets/icons/leaf.svg" alt="" class="icon-svg">
+      <span>GreenMart</span>
+    </a>
+
+    <button class="nut-menu-di-dong" aria-label="Mở menu" aria-expanded="false">
+      <img src="assets/icons/menu.svg" alt="" class="icon-svg">
+    </button>
+
+    <nav class="menu-chinh">
+      <a href="index.html">Trang chủ</a>
+      <a href="san-pham.html" class="dang-hoat-dong">Sản phẩm</a>
+      <a href="tin-tuc.html">Tin tức</a>
+      <a href="lien-he.html">Liên hệ</a>
+    </nav>
+
+    <div class="o-tim-kiem-header">
+      <img src="assets/icons/search.svg" alt="" class="icon-svg">
+      <input type="text" id="o-tim-kiem-sp" placeholder="Bạn đang tìm sản phẩm gì?">
+    </div>
+
+    <div class="icon-tien-ich">
+      <a href="dang-nhap.html" class="nut-icon" aria-label="Tài khoản">
+        <img src="assets/icons/user.svg" alt="" class="icon-svg">
+      </a>
+      <a href="yeu-thich.html" class="nut-icon" aria-label="Sản phẩm yêu thích">
+        <img src="assets/icons/heart.svg" alt="" class="icon-svg">
+        <span class="the-so-luong" data-so-luong-yeu-thich>0</span>
+      </a>
+      <a href="gio-hang.html" class="nut-icon" aria-label="Giỏ hàng">
+        <img src="assets/icons/cart.svg" alt="" class="icon-svg">
+        <span class="the-so-luong" data-so-luong-gio-hang>0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="duong-dan">
+    <a href="index.html">Trang chủ</a>
+    <span class="ngan-cach">/</span>
+    <span aria-current="page">Sản phẩm</span>
+  </div>
+
+  <div class="tieu-de-trang">
+    <div>
+      <h1 id="tieu-de-danh-muc">Sản phẩm sạch</h1>
+      <span class="dem-ket-qua" id="dem-ket-qua">Đang tải...</span>
+    </div>
+    <select class="o-chon o-sap-xep" id="o-sap-xep">
+      <option value="moi-nhat">Sắp xếp: Mới nhất</option>
+      <option value="gia-tang">Giá: Thấp đến cao</option>
+      <option value="gia-giam">Giá: Cao đến thấp</option>
+      <option value="danh-gia">Đánh giá cao nhất</option>
+    </select>
+  </div>
+
+  <button class="nut nut-vien nut-mo-loc-di-dong" id="nut-mo-loc">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+    Bộ lọc sản phẩm
+  </button>
+
+  <div class="bo-cuc-san-pham">
+    <!-- ============ BỘ LỌC ============ -->
+    <aside class="khoi-loc-wrap" id="khoi-loc-wrap">
+      <div class="khoi-loc">
+        <div class="khoi-loc-tieu-de">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg>
+          Danh mục sản phẩm
+        </div>
+        <ul class="danh-sach-loc" id="loc-danh-muc">
+          <li><label class="o-check"><input type="checkbox" value="rau-cu"><span>Rau củ hữu cơ</span></label></li>
+          <li><label class="o-check"><input type="checkbox" value="thit-ca"><span>Thực phẩm tươi sống</span></label></li>
+          <li><label class="o-check"><input type="checkbox" value="trai-cay"><span>Trái cây nhập khẩu</span></label></li>
+          <li><label class="o-check"><input type="checkbox" value="trung-sua"><span>Sữa & Đồ uống</span></label></li>
+          <li><label class="o-check"><input type="checkbox" value="huu-co"><span>Thực phẩm hữu cơ</span></label></li>
+          <li><label class="o-check"><input type="checkbox" value="ngu-coc"><span>Ngũ cốc & hạt</span></label></li>
+        </ul>
+
+        <hr>
+
+        <div class="khoi-loc-tieu-de" style="margin-bottom:14px">Khoảng giá</div>
+        <input type="range" id="loc-gia" min="0" max="1000000" step="10000" value="1000000">
+        <div class="khoang-gia-nhan">
+          <span>0đ</span>
+          <span id="nhan-gia-toi-da">1.000.000đ+</span>
+        </div>
+
+        <hr>
+
+        <div class="khoi-loc-tieu-de" style="margin-bottom:14px">Nguồn gốc</div>
+        <ul class="danh-sach-loc" id="loc-nguon-goc">
+          <li><label class="o-radio"><input type="radio" name="nguon-goc" value="trong-nuoc"><span>Trong nước (VietGAP)</span></label></li>
+          <li><label class="o-radio"><input type="radio" name="nguon-goc" value="nhap-khau"><span>Nhập khẩu chính ngạch</span></label></li>
+        </ul>
+
+        <hr>
+
+        <div class="hang-cong-tac">
+          <span>Sản phẩm hữu cơ</span>
+          <label class="cong-tac"><input type="checkbox" id="loc-huu-co"></label>
+        </div>
+        <div class="hang-cong-tac">
+          <span>Còn hàng</span>
+          <label class="cong-tac"><input type="checkbox" id="loc-con-hang"></label>
+        </div>
+
+        <hr>
+
+        <div class="khoi-loc-tieu-de" style="margin-bottom:14px">Đánh giá</div>
+        <div class="danh-gia-sao" id="loc-danh-gia" data-gia-tri="0">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span>Trở lên</span>
+        </div>
+
+        <button class="nut-xoa-loc" id="nut-xoa-loc">Xóa tất cả bộ lọc</button>
+      </div>
+    </aside>
+
+    <!-- ============ LƯỚI SẢN PHẨM ============ -->
+    <div>
+      <div class="luoi-san-pham" id="luoi-san-pham"></div>
+      <p class="trang-thai-rong" id="trang-thai-rong" style="display:none;">
+        Không tìm thấy sản phẩm phù hợp với bộ lọc bạn đã chọn.
+      </p>
+      <nav class="phan-trang" id="phan-trang" aria-label="Phân trang"></nav>
+    </div>
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="chan-trang">
+  <div class="container">
+    <div class="chan-trang-noi-dung">
+      <div class="chan-trang-gioi-thieu">
+        <h2>GreenMart</h2>
+        <p>Cung cấp thực phẩm sạch, an toàn và tươi ngon mỗi ngày từ trang trại đến bàn ăn của bạn.</p>
+        <div class="mang-xa-hoi">
+          <a href="index.html" aria-label="Về trang chủ GreenMart" title="Trang chủ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Mở Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="lien-he.html" aria-label="Liên hệ GreenMart" title="Liên hệ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg></a>
+        </div>
+      </div>
+      <div class="chan-trang-cot">
+        <h3>Về chúng tôi</h3>
+        <ul>
+          <li><a href="gioi-thieu.html">Câu chuyện thương hiệu</a></li>
+          <li><a href="he-thong-cua-hang.html">Hệ thống cửa hàng</a></li>
+          <li><a href="tuyen-dung.html">Tuyển dụng</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="chan-trang-cot">
+        <h3>Chính sách</h3>
+        <ul>
+          <li><a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
+          <li><a href="dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
+          <li><a href="chinh-sach-giao-hang.html">Chính sách giao hàng</a></li>
+          <li><a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a></li>
+        </ul>
+      </div>
+      <div class="chan-trang-cot ban-tin-footer">
+        <h3>Đăng ký bản tin</h3>
+        <p>Nhận thông tin khuyến mãi và mẹo vặt sức khỏe hàng tuần.</p>
+        <form class="form-ban-tin">
+          <input type="email" placeholder="Email của bạn" required>
+          <button type="submit">Gửi</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="chan-trang-duoi"><div class="container">© 2026 GreenMart. Tất cả quyền được bảo lưu.</div></div>
+</footer>
+
+    <script src="js/common.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
