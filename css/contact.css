@@ -1,0 +1,218 @@
+/* GREENMART - contact.css */
+
+/* ===== lien-he.css ===== */
+/* =========================================================
+   TRANG LIÊN HỆ
+   ========================================================= */
+
+.banner-lien-he {
+  position: relative;
+  background: var(--mau-xanh-dam);
+  border-radius: var(--bo-goc-lg);
+  overflow: hidden;
+  padding: 48px;
+  margin-bottom: 40px;
+}
+
+.banner-lien-he::before {
+  content: "";
+  position: absolute;
+  right: -60px;
+  top: -60px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.banner-lien-he::after {
+  content: "";
+  position: absolute;
+  right: 40px;
+  bottom: -80px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.banner-lien-he h1,
+.banner-lien-he p {
+  position: relative;
+  z-index: 1;
+  color: var(--mau-trang);
+}
+
+.banner-lien-he h1 {
+  margin-bottom: 12px;
+}
+
+.banner-lien-he p {
+  max-width: 560px;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.bo-cuc-lien-he {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 28px;
+  margin-bottom: 48px;
+}
+
+.khoi-thong-tin-lh {
+  background: var(--mau-nen-phu);
+  border-radius: var(--bo-goc-md);
+  padding: 28px;
+  height: fit-content;
+}
+
+.khoi-thong-tin-lh h2 {
+  font-size: 19px;
+  margin-bottom: 22px;
+}
+
+.muc-thong-tin-lh {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.muc-thong-tin-lh .icon-tron {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--mau-xanh-nhat);
+  color: var(--mau-xanh-dam);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.muc-thong-tin-lh .icon-tron svg {
+  width: 19px;
+  height: 19px;
+}
+
+.muc-thong-tin-lh strong {
+  display: block;
+  font-size: 14.5px;
+  margin-bottom: 2px;
+}
+
+.muc-thong-tin-lh span,
+.muc-thong-tin-lh a {
+  font-size: 14px;
+  color: var(--mau-chu-phu);
+}
+
+.muc-thong-tin-lh a.mau-nhan {
+  color: var(--mau-xanh-dam);
+  font-weight: 600;
+}
+
+.anh-cua-hang-lh {
+  margin-top: 22px;
+  border-radius: var(--bo-goc-md);
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 4/3;
+}
+
+.anh-cua-hang-lh figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 14px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent);
+  color: var(--mau-trang);
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.khoi-form-lh {
+  background: var(--mau-trang);
+  border: 1px solid var(--mau-vien);
+  border-radius: var(--bo-goc-md);
+  padding: 30px;
+}
+
+.khoi-ban-do {
+  border-radius: var(--bo-goc-md);
+  overflow: hidden;
+  border: 1px solid var(--mau-vien);
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  min-height: 320px;
+}
+
+.khoi-ban-do iframe,
+.khoi-ban-do .khung-anh {
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  display: block;
+}
+
+.ban-do-thong-tin {
+  padding: 24px;
+  background: var(--mau-nen-phu);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ban-do-thong-tin strong {
+  font-size: 15px;
+}
+
+.ban-do-thong-tin span {
+  font-size: 13.5px;
+  color: var(--mau-chu-phu);
+  display: block;
+}
+
+.ban-do-thong-tin a {
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--mau-xanh-dam);
+  font-weight: 700;
+  font-size: 13.5px;
+}
+
+@media (max-width: 900px) {
+  .bo-cuc-lien-he {
+    grid-template-columns: 1fr;
+  }
+
+  .khoi-ban-do {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-lien-he {
+    padding: 32px 24px;
+  }
+}
+
+/* Cột thông tin và ảnh cửa hàng tách thành hai khối như bản thiết kế. */
+.cot-trai-lien-he {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.cot-trai-lien-he .khoi-thong-tin-lh {
+  width: 100%;
+}
+
+.cot-trai-lien-he .anh-cua-hang-lh {
+  margin-top: 0;
+  background: var(--mau-nen-phu);
+  box-shadow: var(--do-bong-sm);
+}

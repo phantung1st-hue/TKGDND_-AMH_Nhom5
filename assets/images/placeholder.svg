@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#EEF2ED"/>
+  <g fill="none" stroke="#B9C7B4" stroke-width="2">
+    <rect x="40" y="40" width="320" height="320" rx="16" stroke-dasharray="8 8"/>
+  </g>
+  <g transform="translate(200,175)" fill="#9FB199">
+    <path d="M0 -38 C 22 -38 40 -20 40 2 C 40 26 20 44 0 56 C -20 44 -40 26 -40 2 C -40 -20 -22 -38 0 -38 Z" opacity="0.5"/>
+    <path d="M0 -20 C 12 -20 22 -10 22 2 C 22 16 10 28 0 34 C -10 28 -22 16 -22 2 C -22 -10 -12 -20 0 -20 Z" fill="#EEF2ED"/>
+  </g>
+  <text x="200" y="255" font-family="Arial, sans-serif" font-size="16" fill="#8C9A87" text-anchor="middle">Hinh anh San pham</text>
+  <text x="200" y="278" font-family="Arial, sans-serif" font-size="13" fill="#A8B5A3" text-anchor="middle">GreenMart</text>
+</svg>
