@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenMart - Giỏ hàng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="GreenMart home">
+          <img src="./assets/icons/logo.svg" alt="GreenMart logo" />
+          <span>GreenMart</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="#">Trang chủ</a>
+          <a href="#">Sản phẩm</a>
+          <a href="#">Tin tức</a>
+          <a href="#">Liên hệ</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <label class="search-pill" aria-label="Tìm sản phẩm">
+            <img src="./assets/icons/search.svg" alt="Search" />
+            <input type="text" placeholder="Bạn đang tìm sản phẩm gì?" />
+          </label>
+          <button class="icon-button" type="button" aria-label="Thống kê">
+            <img src="./assets/icons/stats.svg" alt="Stats" />
+          </button>
+          <button class="icon-button" type="button" aria-label="Yêu thích">
+            <img src="./assets/icons/heart.svg" alt="Heart" />
+          </button>
+          <button class="icon-button cart-button" type="button" aria-label="Giỏ hàng">
+            <img src="./assets/icons/cart.svg" alt="Cart" />
+            <span class="cart-badge">2</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="cart-page">
+        <section class="page-heading">
+          <div class="breadcrumbs" aria-label="breadcrumb">
+            <a href="#">Trang chủ</a>
+            <span>/</span>
+            <span class="current">Giỏ hàng</span>
+          </div>
+          <h1>Giỏ hàng của bạn</h1>
+
+          <div class="shipping-banner" role="status">
+            <img src="./assets/icons/free-shipping.svg" alt="Free shipping" />
+            <div class="shipping-copy">
+              <p>
+                Bạn còn thiếu
+                <strong data-shipping-remaining>100.000 VNĐ</strong>
+                để được miễn phí giao hàng.
+              </p>
+              <div class="progress-track" aria-hidden="true">
+                <span class="progress-fill" data-progress-fill></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cart-layout">
+          <div class="cart-list">
+            <article class="cart-item" data-price="45000" data-id="tomato">
+              <img class="product-thumb" src="./assets/images/tomato.png" alt="Cà chua Organic Đà Lạt" />
+              <div class="product-info">
+                <h3>Cà chua Organic Đà Lạt</h3>
+                <p>Đơn vị: 500g</p>
+                <div class="price">45.000 VNĐ</div>
+              </div>
+              <div class="product-actions">
+                <div class="quantity-controls" aria-label="Số lượng sản phẩm">
+                  <button class="qty-btn" type="button" data-action="decrease" aria-label="Giảm số lượng">−</button>
+                  <span class="qty-value">2</span>
+                  <button class="qty-btn" type="button" data-action="increase" aria-label="Tăng số lượng">+</button>
+                </div>
+                <div class="item-total">90.000 VNĐ</div>
+                <button class="remove-btn" type="button" aria-label="Xóa sản phẩm">
+                  <img src="./assets/icons/remove.svg" alt="Delete" />
+                </button>
+              </div>
+            </article>
+
+            <article class="cart-item" data-price="65000" data-id="banana">
+              <img class="product-thumb" src="./assets/images/banana.png" alt="Chuối Laba hướng hữu cơ" />
+              <div class="product-info">
+                <h3>Chuối Laba hướng hữu cơ</h3>
+                <p>Đơn vị: 1 nải (~1.2kg)</p>
+                <div class="price">65.000 VNĐ</div>
+              </div>
+              <div class="product-actions">
+                <div class="quantity-controls" aria-label="Số lượng sản phẩm">
+                  <button class="qty-btn" type="button" data-action="decrease" aria-label="Giảm số lượng">−</button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn" type="button" data-action="increase" aria-label="Tăng số lượng">+</button>
+                </div>
+                <div class="item-total">65.000 VNĐ</div>
+                <button class="remove-btn" type="button" aria-label="Xóa sản phẩm">
+                  <img src="./assets/icons/remove.svg" alt="Delete" />
+                </button>
+              </div>
+            </article>
+
+            <a class="continue-link" href="#">
+              <img src="./assets/icons/arrow-left.svg" alt="Continue shopping" />
+              <span>Tiếp tục mua hàng</span>
+            </a>
+          </div>
+
+          <aside class="summary-card" aria-label="Order summary">
+            <h2>Tổng cộng</h2>
+
+            <div class="summary-row">
+              <span>Tạm tính</span>
+              <strong data-subtotal>155.000 VNĐ</strong>
+            </div>
+            <div class="summary-row">
+              <span>Phí giao hàng</span>
+              <strong data-shipping-fee>30.000 VNĐ</strong>
+            </div>
+
+            <form class="promo-section" id="coupon-form">
+              <label for="coupon">Mã giảm giá</label>
+              <div class="promo-input">
+                <input id="coupon" type="text" placeholder="Nhập mã ưu đãi" />
+                <button type="submit">Áp dụng</button>
+              </div>
+            </form>
+
+            <div class="summary-total">
+              <div class="summary-total-row">
+                <span>Tổng thanh toán</span>
+                <strong data-total>185.000 VNĐ</strong>
+              </div>
+              <p>(Đã bao gồm VAT nếu có)</p>
+            </div>
+
+            <button class="checkout-btn" type="button">Tiến hành thanh toán</button>
+            <div class="security-note">
+              <img src="./assets/icons/secure.svg" alt="Secure" />
+              <span>Thanh toán an toàn & Bảo mật</span>
+            </div>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div class="footer-column brand-column">
+            <div class="brand brand-footer">
+              <img src="./assets/icons/logo.svg" alt="GreenMart logo" />
+              <span>GreenMart</span>
+            </div>
+            <p>Mang thực phẩm sạch và organic đến tận cửa nhà bạn với sự tận tâm cao nhất.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><img src="./assets/icons/facebook.svg" alt="Facebook" /></a>
+              <a href="#" aria-label="Instagram"><img src="./assets/icons/instagram.svg" alt="Instagram" /></a>
+              <a href="#" aria-label="Email"><img src="./assets/icons/email.svg" alt="Email" /></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h4>Về chúng tôi</h4>
+            <ul>
+              <li>Giới thiệu</li>
+              <li>Chính sách bảo mật</li>
+              <li>Điều khoản sử dụng</li>
+              <li>Liên hệ</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Hỗ trợ khách hàng</h4>
+            <ul>
+              <li>Hướng dẫn mua hàng</li>
+              <li>Chính sách vận chuyển</li>
+              <li>Chính sách đổi trả</li>
+              <li>Hệ thống cửa hàng</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Đăng ký nhận tin</h4>
+            <p>Nhận ưu đãi mới nhất và mẹo chăm sóc sức khỏe mỗi tuần.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Email của bạn" />
+              <button type="submit">Đăng ký</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">© 2026 GreenMart. Tất cả quyền được bảo lưu.</div>
+      </footer>
+    </div>
+
+    <script src="./js/cart.js"></script>
+  </body>
+</html>
