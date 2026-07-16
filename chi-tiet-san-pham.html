@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chi tiết sản phẩm - GreenMart</title>
+<link rel="icon" href="assets/images/logo/favicon.png">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+</head>
+<body>
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+
+
+<!-- ================= HEADER ================= -->
+<header class="dau-trang">
+  <div class="container">
+    <a href="index.html" class="logo-thuong-hieu">
+      <img src="assets/icons/leaf.svg" alt="" class="icon-svg">
+      <span>GreenMart</span>
+    </a>
+    <button class="nut-menu-di-dong" aria-label="Mở menu" aria-expanded="false">
+      <img src="assets/icons/menu.svg" alt="" class="icon-svg">
+    </button>
+    <nav class="menu-chinh">
+      <a href="index.html">Trang chủ</a>
+      <a href="san-pham.html" class="dang-hoat-dong">Sản phẩm</a>
+      <a href="tin-tuc.html">Tin tức</a>
+      <a href="lien-he.html">Liên hệ</a>
+    </nav>
+    <div class="o-tim-kiem-header">
+      <img src="assets/icons/search.svg" alt="" class="icon-svg">
+      <input type="text" placeholder="Bạn đang tìm sản phẩm gì?">
+    </div>
+    <div class="icon-tien-ich">
+      <a href="dang-nhap.html" class="nut-icon" aria-label="Tài khoản"><img src="assets/icons/user.svg" alt="" class="icon-svg"></a>
+      <a href="javascript:void(0)" class="nut-icon disabled-link" aria-label="Sản phẩm yêu thích" aria-disabled="true" tabindex="-1">
+        <img src="assets/icons/heart.svg" alt="" class="icon-svg">
+        <span class="the-so-luong" data-so-luong-yeu-thich>0</span>
+      </a>
+      <a href="gio-hang.html" class="nut-icon" aria-label="Giỏ hàng">
+        <img src="assets/icons/cart.svg" alt="" class="icon-svg">
+        <span class="the-so-luong" data-so-luong-gio-hang>0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="duong-dan" id="duong-dan-sp">
+    <a href="index.html">Trang chủ</a>
+    <span class="ngan-cach">/</span>
+    <a href="san-pham.html" id="duong-dan-danh-muc">Sản phẩm</a>
+    <span class="ngan-cach">/</span>
+    <span aria-current="page" id="duong-dan-ten-sp">…</span>
+  </div>
+
+  <section class="chi-tiet-san-pham" id="chi-tiet-san-pham">
+    <!-- Toàn bộ nội dung được js/chi-tiet-san-pham.js render động theo ?id= trên URL -->
+  </section>
+
+  <!-- ================= TABS MÔ TẢ ================= -->
+  <section class="tabs-sp">
+    <div class="tabs-sp-nhan">
+      <button class="dang-hoat-dong" data-tab="mo-ta">Mô tả sản phẩm</button>
+      <button data-tab="dinh-duong">Thông tin dinh dưỡng</button>
+      <button data-tab="nguon-goc">Nguồn gốc</button>
+      <button data-tab="bao-quan">Hướng dẫn bảo quản</button>
+      <button data-tab="danh-gia">Đánh giá (<span id="so-danh-gia-tab">0</span>)</button>
+    </div>
+
+    <div class="tabs-sp-noi-dung">
+      <div class="pane-tab dang-hien" id="pane-mo-ta">
+        <p id="mo-ta-day-du">…</p>
+      </div>
+
+      <div class="pane-tab" id="pane-dinh-duong">
+        <table>
+          <tr><td>Năng lượng</td><td>52 kcal / 100g</td></tr>
+          <tr><td>Chất xơ</td><td>2.2 g</td></tr>
+          <tr><td>Vitamin C</td><td>28% giá trị hằng ngày</td></tr>
+          <tr><td>Vitamin A</td><td>17% giá trị hằng ngày</td></tr>
+          <tr><td>Kali</td><td>237 mg</td></tr>
+        </table>
+      </div>
+
+      <div class="pane-tab" id="pane-nguon-goc">
+        <p>Sản phẩm được truy xuất nguồn gốc rõ ràng từ trang trại đến tay người tiêu dùng, đạt các chứng nhận an toàn thực phẩm theo quy định hiện hành. Quý khách có thể quét mã QR trên bao bì để xem chi tiết thông tin trang trại, ngày thu hoạch và kết quả kiểm định chất lượng gần nhất.</p>
+      </div>
+
+      <div class="pane-tab" id="pane-bao-quan">
+        <p>Bảo quản ở ngăn mát tủ lạnh (2 - 8°C) và sử dụng trong vòng 5 - 7 ngày để đảm bảo độ tươi ngon tốt nhất. Tránh để sản phẩm tiếp xúc trực tiếp với ánh nắng mặt trời hoặc nơi có nhiệt độ cao. Rửa sạch trước khi chế biến hoặc sử dụng.</p>
+      </div>
+
+      <div class="pane-tab" id="pane-danh-gia">
+        <div class="danh-gia-khach-hang" id="vung-danh-gia">
+          <!-- render động -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SẢN PHẨM LIÊN QUAN ================= -->
+  <section class="san-pham-lien-quan">
+    <div class="tieu-de-hang">
+      <h2>Sản phẩm liên quan</h2>
+      <a href="san-pham.html" class="lien-ket-xem-them">
+        Xem tất cả
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="luoi-san-pham luoi-4" id="vung-san-pham-lien-quan"></div>
+  </section>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="chan-trang">
+  <div class="container">
+    <div class="chan-trang-noi-dung">
+      <div class="chan-trang-gioi-thieu">
+        <h2>GreenMart</h2>
+        <p>Cung cấp thực phẩm hữu cơ chuẩn GlobalGAP, mang lại sự an tâm tuyệt đối cho bữa ăn gia đình Việt.</p>
+        <div class="mang-xa-hoi">
+          <a href="index.html" aria-label="Về trang chủ GreenMart" title="Trang chủ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Mở Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></a>
+          <a href="lien-he.html" aria-label="Liên hệ GreenMart" title="Liên hệ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg></a>
+        </div>
+      </div>
+      <div class="chan-trang-cot">
+        <h3>Về chúng tôi</h3>
+        <ul>
+          <li><a href="javascript:void(0)" class="disabled-link" aria-disabled="true" tabindex="-1">Câu chuyện thương hiệu</a></li>
+          <li><a href="#">Quy trình sản xuất</a></li>
+          <li><a href="javascript:void(0)" class="disabled-link" aria-disabled="true" tabindex="-1">Tuyển dụng</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="chan-trang-cot">
+        <h3>Hỗ trợ khách hàng</h3>
+        <ul>
+          <li><a href="javascript:void(0)" class="disabled-link" aria-disabled="true" tabindex="-1">Chính sách bảo mật</a></li>
+          <li><a href="javascript:void(0)" class="disabled-link" aria-disabled="true" tabindex="-1">Điều khoản sử dụng</a></li>
+          <li><a href="javascript:void(0)" class="disabled-link" aria-disabled="true" tabindex="-1">Chính sách giao hàng</a></li>
+          <li><a href="#">Câu hỏi thường gặp</a></li>
+        </ul>
+      </div>
+      <div class="chan-trang-cot ban-tin-footer">
+        <h3>Đăng ký nhận tin</h3>
+        <p>Nhận thông báo về khuyến mãi và sản phẩm mới nhất.</p>
+        <form class="form-ban-tin">
+          <input type="email" placeholder="Email của bạn" required>
+          <button type="submit">Gửi</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="chan-trang-duoi"><div class="container">© 2026 GreenMart. Tất cả quyền được bảo lưu.</div></div>
+</footer>
+
+    <script src="js/common.js"></script>
+  <script src="js/product-detail.js"></script>
+</body>
+</html>

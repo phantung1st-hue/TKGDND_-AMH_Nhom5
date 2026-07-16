@@ -1,0 +1,378 @@
+/* GREENMART - home.css */
+
+/* ===== trang-chu.css ===== */
+/* =========================================================
+   TRANG CHỦ
+   ========================================================= */
+
+/* ---- Hero banner ---- */
+.hero-trang-chu {
+  position: relative;
+  background: var(--mau-nen-sage);
+  overflow: hidden;
+}
+
+.hero-trang-chu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    var(--mau-nen) 0%,
+    rgba(252, 249, 248, 0.86) 32%,
+    rgba(252, 249, 248, 0.35) 55%,
+    rgba(252, 249, 248, 0) 75%
+  );
+  z-index: 1;
+}
+
+.hero-trang-chu .khung-anh {
+  position: absolute;
+  inset: 0;
+  border-radius: 0;
+}
+
+.hero-noi-dung {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+  padding: 96px 0;
+}
+
+.hero-noi-dung h1 {
+  margin-bottom: 18px;
+}
+
+.hero-noi-dung p {
+  font-size: 16.5px;
+  max-width: 480px;
+  margin-bottom: 32px;
+}
+
+.hero-nut-nhom {
+  display: flex;
+  gap: 14px;
+}
+
+/* ---- Dải thống kê điểm nhấn ---- */
+.dai-thong-ke {
+  position: relative;
+  background: linear-gradient(120deg, var(--mau-xanh-dam) 0%, var(--mau-xanh) 100%);
+  padding: 36px 0;
+  overflow: hidden;
+}
+
+.dai-thong-ke::before,
+.dai-thong-ke::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+}
+.dai-thong-ke::before {
+  width: 260px;
+  height: 260px;
+  top: -140px;
+  left: -60px;
+}
+.dai-thong-ke::after {
+  width: 220px;
+  height: 220px;
+  bottom: -130px;
+  right: -40px;
+}
+
+.luoi-thong-ke {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.muc-thong-ke {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--mau-trang);
+}
+
+.icon-thong-ke {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-thong-ke svg {
+  width: 22px;
+  height: 22px;
+}
+
+.so-thong-ke {
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.muc-thong-ke p {
+  font-size: 13.5px;
+  opacity: 0.88;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .luoi-thong-ke {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
+  }
+}
+@media (max-width: 520px) {
+  .luoi-thong-ke {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- Danh mục nổi bật ---- */
+.luoi-danh-muc {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 28px;
+}
+
+.the-danh-muc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.the-danh-muc .khung-anh {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  border: 1px solid var(--mau-vien);
+  transition: border-color var(--toc-do-chuyen), transform var(--toc-do-chuyen);
+}
+
+.the-danh-muc:hover .khung-anh {
+  border-color: var(--mau-xanh);
+  transform: translateY(-4px);
+}
+
+.the-danh-muc span {
+  font-weight: 600;
+  font-size: 14.5px;
+}
+
+/* ---- Tiêu đề section có nút "xem tất cả" cùng hàng ---- */
+.tieu-de-hang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.tieu-de-hang h2 {
+  margin: 0;
+}
+
+/* ---- Băng rôn khuyến mãi ---- */
+.banner-khuyen-mai {
+  position: relative;
+  border-radius: var(--bo-goc-lg);
+  overflow: hidden;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-khuyen-mai .khung-anh {
+  position: absolute;
+  inset: 0;
+  border-radius: 0;
+}
+
+.banner-khuyen-mai::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(13, 30, 15, 0.72) 0%, rgba(13, 30, 15, 0.42) 55%, rgba(13, 30, 15, 0.05) 100%);
+  z-index: 1;
+}
+
+.banner-khuyen-mai-noi-dung {
+  position: relative;
+  z-index: 2;
+  padding: 48px;
+  max-width: 480px;
+  color: var(--mau-trang);
+}
+
+.banner-khuyen-mai-noi-dung h2 {
+  color: var(--mau-trang);
+  margin-bottom: 16px;
+}
+
+.banner-khuyen-mai-noi-dung p {
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 28px;
+}
+
+/* ---- Cam kết / tính năng nổi bật ---- */
+.luoi-cam-ket {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  border-top: 1px solid var(--mau-vien);
+  border-bottom: 1px solid var(--mau-vien);
+}
+
+.the-cam-ket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+}
+
+.the-cam-ket .icon-tron {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--bo-goc-md);
+  background: var(--mau-xanh-nhat);
+  color: var(--mau-xanh-dam);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.the-cam-ket .icon-tron svg {
+  width: 26px;
+  height: 26px;
+}
+
+.the-cam-ket h4 {
+  font-size: 15.5px;
+}
+
+.the-cam-ket p {
+  font-size: 13.5px;
+}
+
+/* ---- Tin tức sức khỏe (blog preview) ---- */
+.luoi-tin-tuc-preview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.the-tin-tuc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.the-tin-tuc .khung-anh {
+  aspect-ratio: 16 / 11;
+  margin-bottom: 6px;
+}
+
+.the-tin-tuc:hover .khung-anh img {
+  transform: scale(1.05);
+}
+
+.the-tin-tuc h3 {
+  font-size: 17px;
+  transition: color var(--toc-do-chuyen);
+}
+
+.the-tin-tuc:hover h3 {
+  color: var(--mau-xanh-dam);
+}
+
+.the-tin-tuc p {
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .luoi-danh-muc { grid-template-columns: repeat(3, 1fr); }
+  .luoi-cam-ket { grid-template-columns: repeat(2, 1fr); }
+  .luoi-tin-tuc-preview { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .hero-noi-dung { padding: 56px 0; }
+  .hero-nut-nhom { flex-wrap: wrap; }
+  .luoi-danh-muc { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .the-danh-muc .khung-anh { width: 84px; height: 84px; }
+  .luoi-cam-ket { grid-template-columns: 1fr; text-align: center; }
+  .luoi-tin-tuc-preview { grid-template-columns: 1fr; }
+  .banner-khuyen-mai-noi-dung { padding: 32px 24px; }
+  .tieu-de-hang { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+
+/* Thẻ sản phẩm trang chủ bám sát thiết kế: ảnh sạch, không hiện đánh giá/yêu thích. */
+.hero-trang-chu .khung-anh img,
+.banner-khuyen-mai .khung-anh img {
+  object-position: center;
+}
+
+#vung-san-pham-noi-bat .the-san-pham-danh-gia,
+#vung-san-pham-noi-bat .nut-yeu-thich {
+  display: none;
+}
+
+#vung-san-pham-noi-bat .the-san-pham-noi-dung {
+  min-height: 138px;
+}
+
+/* FIX: Tăng độ tương phản và căn chỉnh dải thống kê trang chủ. */
+.dai-thong-ke .muc-thong-ke {
+  min-width: 0;
+  gap: 12px;
+}
+
+.dai-thong-ke .icon-thong-ke {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.dai-thong-ke .icon-thong-ke .icon-svg {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  opacity: 1;
+}
+
+.dai-thong-ke .so-thong-ke {
+  color: #fff !important;
+  white-space: nowrap;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.dai-thong-ke .muc-thong-ke p {
+  color: #fff !important;
+  opacity: 0.92;
+  line-height: 1.45;
+  max-width: 130px;
+}
+
+@media (max-width: 1100px) {
+  .dai-thong-ke .luoi-thong-ke {
+    gap: 18px;
+  }
+  .dai-thong-ke .so-thong-ke {
+    font-size: 23px;
+  }
+  .dai-thong-ke .muc-thong-ke p {
+    font-size: 12.5px;
+  }
+}

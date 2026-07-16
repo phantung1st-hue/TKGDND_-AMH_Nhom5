@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenMart - Thực phẩm sạch cho cuộc sống khỏe mạnh</title>
+<meta name="description" content="GreenMart cung cấp thực phẩm sạch, hữu cơ, tươi ngon mỗi ngày với giao hàng nhanh trong 2 giờ.">
+<link rel="icon" href="assets/images/logo/favicon.png">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+
+
+<!-- ================= HEADER ================= -->
+<header class="dau-trang">
+  <div class="container">
+    <a href="index.html" class="logo-thuong-hieu">
+      <img src="assets/icons/leaf.svg" alt="" class="icon-svg">
+      <span>GreenMart</span>
+    </a>
+
+    <button class="nut-menu-di-dong" aria-label="Mở menu" aria-expanded="false">
+      <img src="assets/icons/menu.svg" alt="" class="icon-svg">
+    </button>
+
+    <nav class="menu-chinh">
+      <a href="index.html" class="dang-hoat-dong">Trang chủ</a>
+      <a href="san-pham.html">Sản phẩm</a>
+      <a href="tin-tuc.html">Tin tức</a>
+      <a href="lien-he.html">Liên hệ</a>
+    </nav>
+
+    <div class="o-tim-kiem-header">
+      <img src="assets/icons/search.svg" alt="" class="icon-svg">
+      <input type="text" placeholder="Bạn đang tìm sản phẩm gì?">
+    </div>
+
+    <div class="icon-tien-ich">
+      <a href="dang-nhap.html" class="nut-icon" aria-label="Tài khoản">
+        <img src="assets/icons/user.svg" alt="" class="icon-svg">
+      </a>
+      <a href="javascript:void(0)" class="nut-icon disabled-link" aria-label="Sản phẩm yêu thích" aria-disabled="true" tabindex="-1">
+        <img src="assets/icons/heart.svg" alt="" class="icon-svg">
+        <span class="the-so-luong" data-so-luong-yeu-thich>0</span>
+      </a>
+      <a href="gio-hang.html" class="nut-icon" aria-label="Giỏ hàng">
+        <img src="assets/icons/cart.svg" alt="" class="icon-svg">
+        <span class="the-so-luong" data-so-luong-gio-hang>0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero-trang-chu">
+  <div class="khung-anh">
+    <img src="assets/images/banner/banner-trang-chu.jpg" alt="Nông sản tươi sạch GreenMart" onerror="this.src='assets/images/placeholder.svg'">
+  </div>
+  <div class="container">
+    <div class="hero-noi-dung">
+      <h1>Thực phẩm sạch cho cuộc sống khỏe mạnh</h1>
+      <p>Tươi ngon mỗi ngày – Giao nhanh tận nhà. GreenMart cam kết mang đến những sản phẩm nông sản hữu cơ đạt chuẩn VietGAP.</p>
+      <div class="hero-nut-nhom">
+        <a href="san-pham.html" class="nut nut-cam">Mua ngay</a>
+        <a href="san-pham.html" class="nut nut-vien">Xem sản phẩm</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DẢI THỐNG KÊ ĐIỂM NHẤN ================= -->
+<section class="dai-thong-ke">
+  <div class="container">
+    <div class="luoi-thong-ke">
+      <div class="muc-thong-ke reveal">
+        <div class="icon-thong-ke">
+          <img src="assets/icons/user.svg" alt="" class="icon-svg">
+        </div>
+        <span class="so-thong-ke" data-dem-toi="12000" data-hau-to="+">0</span>
+        <p>Khách hàng tin dùng</p>
+      </div>
+      <div class="muc-thong-ke reveal reveal-cham-1">
+        <div class="icon-thong-ke">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="so-thong-ke" data-dem-toi="500" data-hau-to="+">0</span>
+        <p>Sản phẩm sạch, đạt chuẩn</p>
+      </div>
+      <div class="muc-thong-ke reveal reveal-cham-2">
+        <div class="icon-thong-ke">
+          <img src="assets/icons/heart.svg" alt="" class="icon-svg">
+        </div>
+        <span class="so-thong-ke" data-dem-toi="50" data-hau-to="+">0</span>
+        <p>Nông trại đối tác</p>
+      </div>
+      <div class="muc-thong-ke reveal reveal-cham-3">
+        <div class="icon-thong-ke">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <span class="so-thong-ke" data-dem-toi="2" data-hau-to="h">0</span>
+        <p>Giao hàng nhanh trong</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DANH MỤC NỔI BẬT ================= -->
+<section class="section">
+  <div class="container">
+    <div class="tieu-de-section reveal">
+      <h2>Danh mục nổi bật</h2>
+    </div>
+    <div class="luoi-danh-muc">
+      <a href="san-pham.html?danh-muc=rau-cu" class="the-danh-muc">
+        <div class="khung-anh"><img src="assets/images/danh-muc/rau-cu-sach.jpg" alt="Rau củ sạch" onerror="this.src='assets/images/placeholder.svg'"></div>
+        <span>Rau củ sạch</span>
+      </a>
+      <a href="san-pham.html?danh-muc=trai-cay" class="the-danh-muc">
+        <div class="khung-anh"><img src="assets/images/danh-muc/trai-cay-tuoi.jpg" alt="Trái cây tươi" onerror="this.src='assets/images/placeholder.svg'"></div>
+        <span>Trái cây tươi</span>
+      </a>
+      <a href="san-pham.html?danh-muc=thit-ca" class="the-danh-muc">
+        <div class="khung-anh"><img src="assets/images/danh-muc/thit-va-ca.jpg" alt="Thịt và cá" onerror="this.src='assets/images/placeholder.svg'"></div>
+        <span>Thịt và cá</span>
+      </a>
+      <a href="san-pham.html?danh-muc=trung-sua" class="the-danh-muc">
+        <div class="khung-anh"><img src="assets/images/danh-muc/trung-va-sua.jpg" alt="Trứng và sữa" onerror="this.src='assets/images/placeholder.svg'"></div>
+        <span>Trứng và sữa</span>
+      </a>
+      <a href="san-pham.html?danh-muc=huu-co" class="the-danh-muc">
+        <div class="khung-anh"><img src="assets/images/danh-muc/thuc-pham-huu-co.jpg" alt="Thực phẩm hữu cơ" onerror="this.src='assets/images/placeholder.svg'"></div>
+        <span>Thực phẩm hữu cơ</span>
+      </a>
+      <a href="san-pham.html?danh-muc=ngu-coc" class="the-danh-muc">
+        <div class="khung-anh"><img src="assets/images/danh-muc/ngu-coc-hat.jpg" alt="Ngũ cốc và hạt" onerror="this.src='assets/images/placeholder.svg'"></div>
+        <span>Ngũ cốc & hạt</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SẢN PHẨM NỔI BẬT ================= -->
+<section class="section section-phu">
+  <div class="container">
+    <div class="tieu-de-hang">
+      <h2>Sản phẩm nổi bật</h2>
+      <a href="san-pham.html" class="lien-ket-xem-them">
+        Xem tất cả
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="luoi-san-pham luoi-4" id="vung-san-pham-noi-bat">
+      <!-- Được JS render từ js/du-lieu-san-pham.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= BANNER KHUYẾN MÃI ================= -->
+<section class="section">
+  <div class="container">
+    <div class="banner-khuyen-mai reveal">
+      <div class="khung-anh">
+        <img src="assets/images/banner/banner-khuyen-mai.jpg" alt="Ưu đãi thực phẩm xanh" onerror="this.src='assets/images/placeholder.svg'">
+      </div>
+      <div class="banner-khuyen-mai-noi-dung">
+        <h2>Ưu đãi thực phẩm xanh - Giảm đến 30%</h2>
+        <p>Cơ hội để sở hữu những sản phẩm hữu cơ tốt nhất cho gia đình với mức giá cực kỳ ưu đãi. Chỉ diễn ra trong tuần này!</p>
+        <a href="san-pham.html?danh-muc=huu-co" class="nut nut-cam">Khám phá ngay</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAM KẾT ================= -->
+<section class="container">
+  <div class="luoi-cam-ket">
+    <div class="the-cam-ket">
+      <div class="icon-tron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 4 13H2a10 10 0 0 0 10 10z"/><path d="M4 13c0-6 4-11 10-11 0 6-4 11-10 11z"/></svg></div>
+      <h4>Thực phẩm tươi sạch</h4>
+      <p>Sản phẩm được thu hoạch và nhập mới mỗi ngày.</p>
+    </div>
+    <div class="the-cam-ket">
+      <div class="icon-tron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
+      <h4>Nguồn gốc rõ ràng</h4>
+      <p>Truy xuất nguồn gốc 100% từ các trang trại uy tín.</p>
+    </div>
+    <div class="the-cam-ket">
+      <div class="icon-tron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="7" width="15" height="11" rx="1"/><path d="M16 10h3.5L23 14v4h-7"/><circle cx="6" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg></div>
+      <h4>Giao hàng nhanh chóng</h4>
+      <p>Giao hàng nội thành chỉ trong vòng 2 giờ.</p>
+    </div>
+    <div class="the-cam-ket">
+      <div class="icon-tron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h13v13H3z"/><path d="M16 10h5l-2-3z"/><path d="M8 3v4M3 3h13"/></svg></div>
+      <h4>Đổi trả dễ dàng</h4>
+      <p>Hoàn tiền hoặc đổi sản phẩm nếu không hài lòng.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TIN TỨC SỨC KHỎE ================= -->
+<section class="section">
+  <div class="container">
+    <div class="tieu-de-section reveal">
+      <h2>Tin tức sức khỏe</h2>
+    </div>
+    <div class="luoi-tin-tuc-preview" id="vung-tin-tuc-preview">
+      <!-- Được JS render từ js/du-lieu-tin-tuc.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="chan-trang">
+  <div class="container">
+    <div class="chan-trang-noi-dung">
+      <div class="chan-trang-gioi-thieu">
+        <h2>GreenMart</h2>
+        <p>Cung cấp thực phẩm sạch, an toàn và tươi ngon mỗi ngày cho mọi gia đình Việt. Sứ mệnh của chúng tôi là mang thiên nhiên đến gần hơn với bữa ăn của bạn.</p>
+        <div class="mang-xa-hoi">
+          <a href="index.html" aria-label="Về trang chủ GreenMart" title="Trang chủ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Mở Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="lien-he.html" aria-label="Liên hệ GreenMart" title="Liên hệ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="chan-trang-cot">
+        <h3>Về chúng tôi</h3>
+        <ul>
+          <li><a href="javascript:void(0)" class="disabled-link" aria-disabled="true" tabindex="-1">Câu chuyện thương hiệu</a></li>
+          <li><a href="javascript:void(0)" class="disabled-link" aria-disabled="true" tabindex="-1">Hệ thống cửa hàng</a></li>
+          <li><a href="javascript:void(0)" class="disabled-link" aria-disabled="true" tabindex="-1">Tuyển dụng</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <div class="chan-trang-cot">
+        <h3>Hỗ trợ khách hàng</h3>
+        <ul>
+          <li><a href="javascript:void(0)" class="disabled-link" aria-disabled="true" tabindex="-1">Chính sách bảo mật</a></li>
+          <li><a href="javascript:void(0)" class="disabled-link" aria-disabled="true" tabindex="-1">Điều khoản sử dụng</a></li>
+          <li><a href="javascript:void(0)" class="disabled-link" aria-disabled="true" tabindex="-1">Chính sách giao hàng</a></li>
+          <li><a href="javascript:void(0)" class="disabled-link" aria-disabled="true" tabindex="-1">Chính sách đổi trả</a></li>
+        </ul>
+      </div>
+
+      <div class="chan-trang-cot ban-tin-footer">
+        <h3>Bản tin</h3>
+        <p>Đăng ký nhận thông tin ưu đãi và mẹo vặt sức khỏe hàng tuần.</p>
+        <form class="form-ban-tin">
+          <input type="email" placeholder="Email của bạn" required>
+          <button type="submit">Gửi</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="chan-trang-duoi">
+    <div class="container">© 2026 GreenMart. Tất cả quyền được bảo lưu.</div>
+  </div>
+</footer>
+
+    <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
