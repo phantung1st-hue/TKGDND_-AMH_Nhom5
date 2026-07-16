@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GreenMart | Trang Chủ</title>
-    <meta name="description" content="Trang chủ GreenMart với thực phẩm sạch, sản phẩm nổi bật và tin tức sức khỏe." />
+    <title>GreenMart | Tin Tức</title>
+    <meta name="description" content="Tin tức GreenMart về dinh dưỡng, mẹo hay và hành trình xanh từ nông trại đến bàn ăn." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
@@ -31,10 +31,10 @@
           </button>
 
           <nav class="topnav" id="topnav" aria-label="Điều hướng chính">
-            <a class="nav-link active" href="index.html">Trang chủ</a>
-            <a class="nav-link" href="index.html#products">Sản phẩm</a>
-            <a class="nav-link" href="tin-tuc.html">Tin tức</a>
-            <a class="nav-link" href="index.html#footer">Liên hệ</a>
+            <a class="nav-link" href="index.html">Trang chủ</a>
+            <a class="nav-link" href="TKGDND_DAMH_Nhom5/san-pham.html">Sản phẩm</a>
+            <a class="nav-link active" href="tin-tuc.html">Tin tức</a>
+            <a class="nav-link" href="#footer">Liên hệ</a>
           </nav>
 
           <div class="top-actions">
@@ -68,208 +68,186 @@
         </div>
       </header>
 
-      <main>
-        <section class="hero" aria-label="Banner chính">
-          <div class="inner hero-content">
-            <h1>Thực phẩm sạch cho cuộc sống khỏe mạnh</h1>
-            <p>
-              Tươi ngon mỗi ngày – Giao nhanh tận nhà. GreenMart cam kết mang đến những sản phẩm nông sản hữu cơ đạt chuẩn VietGAP.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="chi-tiet-san-pham.html">Mua ngay</a>
-              <a class="btn btn-secondary" href="index.html#products">Xem sản phẩm</a>
-            </div>
-          </div>
+      <main class="news-page-main">
+        <section class="page-breadcrumb inner" aria-label="Đường dẫn">
+          <a href="index.html">Trang chủ</a>
+          <span>/</span>
+          <span>Tin tức</span>
         </section>
 
-        <section class="categories" aria-label="Danh mục nổi bật">
+        <section class="news-hero" aria-label="Tin tức nổi bật">
           <div class="inner">
-            <h2>Danh mục nổi bật</h2>
-            <div class="category-grid">
-              <article class="category-card">
-                <img src="https://www.figma.com/api/mcp/asset/d333f995-29e3-4754-9874-e84973e77551" alt="Rau củ sạch" />
-                <h3>Rau củ sạch</h3>
-              </article>
-              <article class="category-card">
-                <img src="https://www.figma.com/api/mcp/asset/8dc5c107-2e35-4784-9e4c-d33cd8337fd4" alt="Trái cây tươi" />
-                <h3>Trái cây tươi</h3>
-              </article>
-              <article class="category-card">
-                <img src="https://www.figma.com/api/mcp/asset/85afbcbc-83f7-4121-8005-014540ece710" alt="Thịt và cá" />
-                <h3>Thịt và cá</h3>
-              </article>
-              <article class="category-card">
-                <img src="https://www.figma.com/api/mcp/asset/5c3746c3-df75-4cd2-8789-4ff16f33015a" alt="Trứng và sữa" />
-                <h3>Trứng và sữa</h3>
-              </article>
-              <article class="category-card">
-                <img src="https://www.figma.com/api/mcp/asset/a86d2ae9-6492-4faf-8a64-a0077ef217fa" alt="Thực phẩm hữu cơ" />
-                <h3>Thực phẩm hữu cơ</h3>
-              </article>
-              <article class="category-card">
-                <img src="https://www.figma.com/api/mcp/asset/346b9a6f-6f19-4ac1-a4d3-71a7d7d4a3b2" alt="Ngũ cốc và hạt" />
-                <h3>Ngũ cốc &amp; hạt</h3>
-              </article>
+            <div class="news-hero-card">
+              <img src="https://www.figma.com/api/mcp/asset/6a004c3e-9051-4c25-b71b-205bab6d25e4" alt="Hành trình xanh từ nông trại đến bàn ăn" />
+              <div class="news-hero-overlay"></div>
+              <div class="news-hero-content">
+                <span class="news-hero-pill">NỔI BẬT</span>
+                <h1>Hành trình xanh: Từ nông trại đến bàn ăn của bạn</h1>
+                <p>Khám phá cách GreenMart tuyển chọn những nguồn nguyên liệu sạch nhất để đảm bảo sức khỏe tối ưu cho gia đình Việt.</p>
+                <a class="btn btn-primary" href="#">Xem bài viết</a>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="products" id="products" aria-label="Sản phẩm nổi bật">
-          <div class="inner">
-            <div class="section-head">
-              <h2>Sản phẩm nổi bật</h2>
-              <a href="chi-tiet-san-pham.html">Xem tất cả <span>→</span></a>
-            </div>
-
-            <div class="product-grid">
-              <article class="product-card" onclick="window.location.href='chi-tiet-san-pham.html'" style="cursor:pointer">
-                <div class="product-media">
-                  <img src="https://www.figma.com/api/mcp/asset/e083ca46-dff3-4457-a8a1-c0988bd57aa7" alt="Cà chua hữu cơ Đà Lạt" />
-                  <span class="badge">-15%</span>
+        <section class="news-content" aria-label="Danh sách bài viết">
+          <div class="inner news-layout">
+            <div class="news-main">
+              <div class="section-heading">
+                <h2>Bài viết mới nhất</h2>
+                <div class="filters">
+                  <a class="active" href="#">Tất cả</a>
+                  <a href="#">Dinh dưỡng</a>
+                  <a href="#">Mẹo hay</a>
                 </div>
-                <div class="product-body">
-                  <p class="product-tag">Rau củ hữu cơ</p>
-                  <h3>Cà chua hữu cơ Đà Lạt</h3>
-                  <div class="product-meta">
-                    <strong>45.000đ</strong>
-                    <button type="button" aria-label="Thêm vào giỏ hàng">+</button>
-                  </div>
-                </div>
-              </article>
-
-              <article class="product-card" onclick="window.location.href='chi-tiet-san-pham.html'" style="cursor:pointer">
-                <div class="product-media">
-                  <img src="https://www.figma.com/api/mcp/asset/b5fbaa63-8382-4f4e-b3f8-ba349fa2c029" alt="Rau cải xanh VietGAP" />
-                </div>
-                <div class="product-body">
-                  <p class="product-tag">Rau xanh sạch</p>
-                  <h3>Rau cải xanh VietGAP</h3>
-                  <div class="product-meta">
-                    <strong>22.000đ</strong>
-                    <button type="button" aria-label="Thêm vào giỏ hàng">+</button>
-                  </div>
-                </div>
-              </article>
-
-              <article class="product-card" onclick="window.location.href='chi-tiet-san-pham.html'" style="cursor:pointer">
-                <div class="product-media">
-                  <img src="https://www.figma.com/api/mcp/asset/b5de3e7c-a6ae-4202-8e4a-db1991796015" alt="Bơ sáp Tây Nguyên" />
-                </div>
-                <div class="product-body">
-                  <p class="product-tag">Trái cây đặc sản</p>
-                  <h3>Bơ sáp Tây Nguyên</h3>
-                  <div class="product-meta">
-                    <strong>65.000đ</strong>
-                    <button type="button" aria-label="Thêm vào giỏ hàng">+</button>
-                  </div>
-                </div>
-              </article>
-
-              <article class="product-card" onclick="window.location.href='chi-tiet-san-pham.html'" style="cursor:pointer">
-                <div class="product-media">
-                  <img src="https://www.figma.com/api/mcp/asset/d3bef08c-3b57-4816-a89e-1c70e67a2450" alt="Cam sành hữu cơ" />
-                </div>
-                <div class="product-body">
-                  <p class="product-tag">Trái cây hữu cơ</p>
-                  <h3>Cam sành hữu cơ</h3>
-                  <div class="product-meta">
-                    <strong>38.000đ</strong>
-                    <button type="button" aria-label="Thêm vào giỏ hàng">+</button>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="promo-banner" aria-label="Ưu đãi">
-          <div class="inner promo-banner-inner">
-            <div class="promo-content">
-              <h2>Ưu đãi thực phẩm xanh - Giảm đến 30%</h2>
-              <p>
-                Cơ hội để sở hữu những sản phẩm hữu cơ tốt nhất cho gia đình với mức giá cực kỳ ưu đãi. Chỉ diễn ra trong tuần này!
-              </p>
-              <a class="btn btn-primary" href="index.html#products">Khám phá ngay</a>
-            </div>
-          </div>
-        </section>
-
-        <section class="commitments" aria-label="Cam kết GreenMart">
-          <div class="inner commitments-grid">
-            <div class="commitment-card">
-              <div class="commitment-icon">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M5 12.5 10 17l9-10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
               </div>
-              <h3>Thực phẩm tươi sạch</h3>
-              <p>Sản phẩm được thu hoạch và nhập mới mỗi ngày.</p>
-            </div>
-            <div class="commitment-card">
-              <div class="commitment-icon">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M4 7h16M7 7v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V7M10 11v4m4-4v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                </svg>
-              </div>
-              <h3>Nguồn gốc rõ ràng</h3>
-              <p>Truy xuất nguồn gốc 100% từ các trang trại uy tín.</p>
-            </div>
-            <div class="commitment-card">
-              <div class="commitment-icon">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M5 13.5 12 20l7-6.5V6H5v7.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
-                </svg>
-              </div>
-              <h3>Giao hàng nhanh chóng</h3>
-              <p>Giao hàng nội thành chỉ trong vòng 2 giờ.</p>
-            </div>
-            <div class="commitment-card">
-              <div class="commitment-icon">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M7 8h10M8 4h8l2 4v8a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8l2-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
-                </svg>
-              </div>
-              <h3>Đổi trả dễ dàng</h3>
-              <p>Hoàn tiền hoặc đổi sản phẩm nếu không hài lòng.</p>
-            </div>
-          </div>
-        </section>
 
-        <section class="news" id="news" aria-label="Tin tức sức khỏe">
-          <div class="inner">
-            <h2>Tin tức sức khỏe</h2>
-            <div class="news-grid">
-              <article class="news-card" onclick="window.location.href='tin-tuc.html'" style="cursor:pointer">
-                <img src="https://www.figma.com/api/mcp/asset/c1e81ded-df3b-476c-922c-10d10879ce47" alt="Chế độ ăn xanh" />
-                <div class="news-body">
-                  <p class="news-tag">Sống khỏe</p>
-                  <h3>Chế độ ăn xanh: Lợi ích bất ngờ cho tim mạch</h3>
-                  <p>
-                    Nhiều nghiên cứu mới đây chỉ ra rằng việc bổ sung rau củ sạch vào bữa ăn hàng ngày giúp giảm nguy cơ mắc các bệnh về tim mạch lên đến 40%...
-                  </p>
-                </div>
-              </article>
-              <article class="news-card" onclick="window.location.href='tin-tuc.html'" style="cursor:pointer">
-                <img src="https://www.figma.com/api/mcp/asset/cb022aac-b3bc-4eb1-8181-795058d02c37" alt="Phân biệt thực phẩm hữu cơ" />
-                <div class="news-body">
-                  <p class="news-tag">Kiến thức</p>
-                  <h3>Cách phân biệt thực phẩm hữu cơ và thực phẩm VietGAP</h3>
-                  <p>
-                    Không phải ai cũng biết sự khác biệt giữa hai chứng chỉ này. Hãy cùng GreenMart tìm hiểu để có sự lựa chọn đúng đắn nhất cho sức khỏe gia đình.
-                  </p>
-                </div>
-              </article>
-              <article class="news-card" onclick="window.location.href='tin-tuc.html'" style="cursor:pointer">
-                <img src="https://www.figma.com/api/mcp/asset/f341e8d9-34cf-4289-993b-a82466432c50" alt="Mẹo bảo quản rau củ" />
-                <div class="news-body">
-                  <p class="news-tag">Mẹo hay</p>
-                  <h3>5 Mẹo bảo quản rau củ tươi lâu trong tủ lạnh</h3>
-                  <p>
-                    Làm thế nào để rau củ vẫn giữ được độ giòn và dưỡng chất sau nhiều ngày? Những bí quyết đơn giản mà hiệu quả dưới đây sẽ giúp bạn.
-                  </p>
-                </div>
-              </article>
+              <div class="news-post-grid">
+                <article class="news-post-card">
+                  <div class="news-post-media">
+                    <img src="https://www.figma.com/api/mcp/asset/a1e7078c-e837-47b6-9bdd-2c1e4913d605" alt="Bơ sáp trong thực đơn hằng ngày" />
+                    <span class="news-post-tag">Dinh dưỡng</span>
+                  </div>
+                  <div class="news-post-body">
+                    <div class="news-post-meta">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8" />
+                        <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                      </svg>
+                      <span>15 Tháng 5, 2024</span>
+                    </div>
+                    <h3>10 lợi ích không ngờ của bơ sáp trong thực đơn hằng ngày</h3>
+                    <p>Bơ không chỉ ngon mà còn chứa một lượng lớn chất béo lành mạnh tốt cho tim mạch và làn da của bạn...</p>
+                    <a href="#">Đọc thêm</a>
+                  </div>
+                </article>
+
+                <article class="news-post-card">
+                  <div class="news-post-media">
+                    <img src="https://www.figma.com/api/mcp/asset/ce294f88-b5c6-4c16-9bcf-137d0c84692e" alt="Bảo quản rau củ tươi lâu" />
+                    <span class="news-post-tag">Mẹo hay</span>
+                  </div>
+                  <div class="news-post-body">
+                    <div class="news-post-meta">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8" />
+                        <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                      </svg>
+                      <span>12 Tháng 5, 2024</span>
+                    </div>
+                    <h3>Cách bảo quản rau củ tươi lâu trong tủ lạnh suốt cả tuần</h3>
+                    <p>Mẹo nhỏ giúp rau xanh không bị héo và giữ nguyên hàm lượng vitamin khi lưu trữ trong thời gian dài...</p>
+                    <a href="#">Đọc thêm</a>
+                  </div>
+                </article>
+
+                <article class="news-post-card">
+                  <div class="news-post-media">
+                    <img src="https://www.figma.com/api/mcp/asset/6e9cefea-e3cd-4841-a383-e9dc9549e824" alt="Công thức salad ức gà" />
+                    <span class="news-post-tag">Nấu ăn</span>
+                  </div>
+                  <div class="news-post-body">
+                    <div class="news-post-meta">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8" />
+                        <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                      </svg>
+                      <span>10 Tháng 5, 2024</span>
+                    </div>
+                    <h3>Công thức salad ức gà sốt mè rang cho bữa trưa nhanh gọn</h3>
+                    <p>Chỉ với 15 phút chuẩn bị, bạn đã có ngay một bữa ăn giàu đạm và đầy đủ chất xơ cho ngày làm việc...</p>
+                    <a href="#">Đọc thêm</a>
+                  </div>
+                </article>
+
+                <article class="news-post-card">
+                  <div class="news-post-media">
+                    <img src="https://www.figma.com/api/mcp/asset/b2541917-4e6b-4314-9d6c-e8b46cc8c6a8" alt="Nước ép rau quả xanh" />
+                    <span class="news-post-tag">Dinh dưỡng</span>
+                  </div>
+                  <div class="news-post-body">
+                    <div class="news-post-meta">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8" />
+                        <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                      </svg>
+                      <span>08 Tháng 5, 2024</span>
+                    </div>
+                    <h3>Nước ép Green Detox: Thanh lọc cơ thể một cách tự nhiên</h3>
+                    <p>Tìm hiểu lý do tại sao nước ép rau quả xanh lại trở thành xu hướng chăm sóc sức khỏe hàng đầu hiện nay...</p>
+                    <a href="#">Đọc thêm</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="pagination" aria-label="Phân trang">
+                <a class="page-arrow" href="#" aria-label="Trang trước">←</a>
+                <a class="page-number active" href="#">1</a>
+                <a class="page-number" href="#">2</a>
+                <a class="page-number" href="#">3</a>
+                <span class="page-dots">...</span>
+                <a class="page-number" href="#">12</a>
+                <a class="page-arrow" href="#" aria-label="Trang tiếp theo">→</a>
+              </div>
             </div>
+
+            <aside class="news-sidebar">
+              <div class="sidebar-card">
+                <h3>Tìm kiếm</h3>
+                <label class="sidebar-search" aria-label="Tìm tin tức">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="m21 21-4.2-4.2m1.7-5.3a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                  </svg>
+                  <input type="text" placeholder="Tìm tin tức..." />
+                </label>
+              </div>
+
+              <div class="sidebar-card">
+                <h3>Danh mục tin tức</h3>
+                <ul class="category-list">
+                  <li><a href="#">Dinh dưỡng <span>12</span></a></li>
+                  <li><a href="#">Mẹo hay <span>08</span></a></li>
+                  <li><a href="#">Nấu ăn <span>15</span></a></li>
+                  <li><a href="#">Sống xanh <span>05</span></a></li>
+                </ul>
+              </div>
+
+              <div class="sidebar-card">
+                <h3>Bài viết mới nhất</h3>
+                <div class="recent-post-list">
+                  <a class="recent-post-item" href="#">
+                    <img src="https://www.figma.com/api/mcp/asset/0e680ab6-cc48-40eb-82d4-46dc2fc795f3" alt="Rau Kale siêu thực phẩm" />
+                    <div>
+                      <h4>Rau Kale - Siêu thực phẩm từ thiên nhiên</h4>
+                      <span>16 Tháng 5, 2024</span>
+                    </div>
+                  </a>
+                  <a class="recent-post-item" href="#">
+                    <img src="https://www.figma.com/api/mcp/asset/1ffaf0e1-9e64-4778-b820-86a5ba7ca81f" alt="Công dụng bất ngờ từ nấm organic" />
+                    <div>
+                      <h4>Công dụng bất ngờ từ các loại nấm organic</h4>
+                      <span>14 Tháng 5, 2024</span>
+                    </div>
+                  </a>
+                  <a class="recent-post-item" href="#">
+                    <img src="https://www.figma.com/api/mcp/asset/07850900-3591-4565-927c-f620eec94416" alt="Tối ưu bữa ăn người bận rộn" />
+                    <div>
+                      <h4>Tối ưu bữa ăn cho người bận rộn và cần sức khỏe</h4>
+                      <span>11 Tháng 5, 2024</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="newsletter-card">
+                <h3>Đăng ký nhận tin</h3>
+                <p>Nhận những bài viết mới nhất về dinh dưỡng và mẹo sống xanh mỗi tuần.</p>
+                <form class="newsletter-form">
+                  <input type="email" name="email" placeholder="Email của bạn" autocomplete="email" required />
+                  <button type="submit">Đăng ký ngay</button>
+                </form>
+              </div>
+            </aside>
           </div>
         </section>
       </main>
