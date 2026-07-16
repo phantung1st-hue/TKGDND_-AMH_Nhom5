@@ -1,297 +1,279 @@
 <!DOCTYPE html>
+
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GreenMart - Sản phẩm sạch</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/components.css" />
-    <link rel="stylesheet" href="./css/products.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <a class="brand" href="#" aria-label="GreenMart home">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 3 4 7v5c0 5 3.6 8.4 8 9 4.4-.6 8-4 8-9V7l-8-4Z" fill="currentColor" />
-          </svg>
-          <span>GreenMart</span>
-        </a>
-
-        <nav class="main-nav" aria-label="Primary navigation">
-          <a href="#">Trang chủ</a>
-          <a href="#" class="active">Sản phẩm</a>
-          <a href="#">Tin tức</a>
-          <a href="#">Liên hệ</a>
-        </nav>
-
-        <div class="topbar-actions">
-          <label class="search-pill">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="currentColor" d="M10.5 4a6.5 6.5 0 1 0 4.16 11.16l4.34 4.34 1.42-1.42-4.34-4.34A6.5 6.5 0 0 0 10.5 4Zm0 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z" />
-            </svg>
-            <input type="text" placeholder="Bạn đang tìm sản phẩm gì?" />
-          </label>
-          <button class="icon-button" type="button" aria-label="Thông báo">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a4 4 0 0 0-4 4v1.2c0 .7-.2 1.4-.6 2L6 11.2V13h12v-1.8l-1.4-1.6a3.6 3.6 0 0 1-.6-2V7a4 4 0 0 0-4-4Zm0 18a2.6 2.6 0 0 0 2.5-2h-5A2.6 2.6 0 0 0 12 21Z" /></svg>
-          </button>
-          <button class="icon-button" type="button" aria-label="Yêu thích">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 20.4 4.9 13.8a4.6 4.6 0 0 1 0-6.5 4.6 4.6 0 0 1 6.5 0l.6.6.6-.6a4.6 4.6 0 0 1 6.5 0 4.6 4.6 0 0 1 0 6.5L12 20.4Z" /></svg>
-          </button>
-          <button class="icon-button cart-button" type="button" aria-label="Giỏ hàng">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 5h14l-1.3 6.6a2 2 0 0 1-2 1.6H9.8a2 2 0 0 1-1.9-1.5L6.2 4H3V2h4l.2 1.2L7 5Zm3 15a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm7 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" /></svg>
-            <span class="cart-badge">3</span>
-          </button>
-        </div>
-      </header>
-
-      <main class="catalog-content">
-        <section class="catalog-top">
-          <div class="breadcrumbs" aria-label="breadcrumb">
-            <a href="#">Trang chủ</a>
-            <span>/</span>
-            <span class="current">Sản phẩm</span>
-          </div>
-          <div class="catalog-title-row">
-            <h1>Sản phẩm sạch</h1>
-            <label class="sort-control" for="sort-select">
-              <span>Sắp xếp: </span>
-              <select id="sort-select">
-                <option value="newest">Mới nhất</option>
-                <option value="price-asc">Giá thấp đến cao</option>
-                <option value="price-desc">Giá cao đến thấp</option>
-                <option value="rating">Đánh giá cao</option>
-              </select>
-            </label>
-          </div>
-        </section>
-
-        <section class="catalog-layout">
-          <aside class="filters-sidebar" aria-label="Bộ lọc sản phẩm">
-            <div class="filter-group">
-              <h3>Danh mục sản phẩm</h3>
-              <label class="checkbox-row">
-                <input type="checkbox" checked />
-                <span>Rau củ hữu cơ</span>
-              </label>
-              <label class="checkbox-row active">
-                <input type="checkbox" checked />
-                <span>Thực phẩm tươi sống</span>
-              </label>
-              <label class="checkbox-row">
-                <input type="checkbox" />
-                <span>Trái cây nhập khẩu</span>
-              </label>
-              <label class="checkbox-row">
-                <input type="checkbox" />
-                <span>Sữa & Đồ uống</span>
-              </label>
-            </div>
-
-            <div class="filter-group">
-              <h3>Khoảng giá</h3>
-              <div class="price-range">
-                <div class="range-track"></div>
-                <div class="range-values">
-                  <span>0đ</span>
-                  <span>1.000.000đ+</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="filter-group">
-              <h3>Nguồn gốc</h3>
-              <label class="checkbox-row">
-                <input type="checkbox" checked />
-                <span>Trong nước (VietGAP)</span>
-              </label>
-              <label class="checkbox-row">
-                <input type="checkbox" />
-                <span>Nhập khẩu chính ngạch</span>
-              </label>
-            </div>
-
-            <div class="filter-group">
-              <h3>Đánh giá</h3>
-              <label class="checkbox-row">
-                <input type="checkbox" />
-                <span>4.5 trở lên</span>
-              </label>
-            </div>
-          </aside>
-
-          <div class="products-section">
-            <div class="product-grid" id="product-grid">
-              <article class="product-card" data-category="thuc-pham-tuoi" data-price="155000" data-rating="4.8" data-new="true">
-                <div class="card-media">
-                  <img src="https://www.figma.com/api/mcp/asset/e1f98c3b-7f64-4d3a-9a17-2e7fbf8c5c27" alt="Thịt heo sạch" />
-                  <span class="badge badge-new">MỚI</span>
-                  <button class="wishlist-btn" type="button" aria-label="Yêu thích">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 20.4 4.9 13.8a4.6 4.6 0 0 1 0-6.5 4.6 4.6 0 0 1 6.5 0l.6.6.6-.6a4.6 4.6 0 0 1 6.5 0 4.6 4.6 0 0 1 0 6.5L12 20.4Z" /></svg>
-                  </button>
-                </div>
-                <div class="card-body">
-                  <p class="category">THỰC PHẨM TƯƠI</p>
-                  <h4>Thịt heo sạch</h4>
-                  <div class="rating">★ 4.8 (120)</div>
-                  <div class="price-row">
-                    <strong>155.000đ</strong>
-                    <span>/kg</span>
-                  </div>
-                  <button class="add-btn" type="button">Thêm vào giỏ</button>
-                </div>
-              </article>
-
-              <article class="product-card" data-category="hai-san" data-price="450000" data-rating="5" data-sale="true">
-                <div class="card-media">
-                  <img src="https://www.figma.com/api/mcp/asset/abc2406a-f47f-42c1-9214-40c850ab61e0" alt="Cá hồi Na Uy" />
-                  <span class="badge badge-sale">-15%</span>
-                </div>
-                <div class="card-body">
-                  <p class="category">HẢI SẢN NHẬP KHẨU</p>
-                  <h4>Cá hồi Na Uy</h4>
-                  <div class="rating">★ 5.0 (86)</div>
-                  <div class="price-row">
-                    <strong>450.000đ</strong>
-                    <span>/kg</span>
-                    <small>530.000đ</small>
-                  </div>
-                  <button class="add-btn" type="button">Thêm vào giỏ</button>
-                </div>
-              </article>
-
-              <article class="product-card" data-category="trung" data-price="45000" data-rating="4.9">
-                <div class="card-media">
-                  <img src="https://www.figma.com/api/mcp/asset/323106c8-d3b5-49a4-af1a-7d803ef4433f" alt="Trứng gà thả vườn" />
-                </div>
-                <div class="card-body">
-                  <p class="category">TRỨNG & BƠ SỮA</p>
-                  <h4>Trứng gà thả vườn</h4>
-                  <div class="rating">★ 4.9 (215)</div>
-                  <div class="price-row">
-                    <strong>45.000đ</strong>
-                    <span>/vỉ 10 quả</span>
-                  </div>
-                  <button class="add-btn" type="button">Thêm vào giỏ</button>
-                </div>
-              </article>
-
-              <article class="product-card" data-category="sua" data-price="32000" data-rating="4.7">
-                <div class="card-media">
-                  <img src="https://www.figma.com/api/mcp/asset/68d3742d-577a-4b8c-a05d-b84d1d3bfcbc" alt="Sữa tươi không đường" />
-                </div>
-                <div class="card-body">
-                  <p class="category">SỮA & ĐỒ UỐNG</p>
-                  <h4>Sữa tươi thanh</h4>
-                  <div class="rating">★ 4.7 (54)</div>
-                  <div class="price-row">
-                    <strong>32.000đ</strong>
-                    <span>/chai 500ml</span>
-                  </div>
-                  <button class="add-btn" type="button">Thêm vào giỏ</button>
-                </div>
-              </article>
-
-              <article class="product-card" data-category="rau-cu" data-price="18000" data-rating="4.8">
-                <div class="card-media">
-                  <img src="https://www.figma.com/api/mcp/asset/aa794b31-2581-4281-b959-1ca54ac42920" alt="Rau muống hữu cơ" />
-                </div>
-                <div class="card-body">
-                  <p class="category">RAU CỦ HỮU CƠ</p>
-                  <h4>Rau muống hữu cơ</h4>
-                  <div class="rating">★ 4.8 (92)</div>
-                  <div class="price-row">
-                    <strong>18.000đ</strong>
-                    <span>/bó</span>
-                  </div>
-                  <button class="add-btn" type="button">Thêm vào giỏ</button>
-                </div>
-              </article>
-
-              <article class="product-card" data-category="trai-cay" data-price="890000" data-rating="5" data-hot="true">
-                <div class="card-media">
-                  <img src="https://www.figma.com/api/mcp/asset/d31ccf28-f20d-4c68-8bb4-445b17a877b2" alt="Nho mẫu đơn" />
-                  <span class="badge badge-hot">HOT</span>
-                </div>
-                <div class="card-body">
-                  <p class="category">TRÁI CÂY NHẬP</p>
-                  <h4>Nho mẫu đơn</h4>
-                  <div class="rating">★ 5.0 (42)</div>
-                  <div class="price-row">
-                    <strong>890.000đ</strong>
-                    <span>/hộp 1kg</span>
-                  </div>
-                  <button class="add-btn" type="button">Thêm vào giỏ</button>
-                </div>
-              </article>
-            </div>
-
-            <div class="pagination" aria-label="Pagination">
-              <button class="page-btn" type="button" aria-label="Trang trước">←</button>
-              <button class="page-btn active" type="button">1</button>
-              <button class="page-btn" type="button">2</button>
-              <button class="page-btn" type="button">3</button>
-              <span class="page-ellipsis">...</span>
-              <button class="page-btn" type="button">12</button>
-              <button class="page-btn" type="button" aria-label="Trang sau">→</button>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <div class="footer-grid">
-          <div class="footer-column hero-column">
-            <div class="brand brand-footer">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 3 4 7v5c0 5 3.6 8.4 8 9 4.4-.6 8-4 8-9V7l-8-4Z" fill="currentColor" />
-              </svg>
-              <span>GreenMart</span>
-            </div>
-            <p>Cung cấp thực phẩm sạch, an toàn và tươi ngon mỗi ngày từ trang trại đến bàn ăn của bạn.</p>
-            <div class="social-links">
-              <a href="#" aria-label="Facebook">f</a>
-              <a href="#" aria-label="Instagram">in</a>
-              <a href="#" aria-label="Email">✉</a>
-            </div>
-          </div>
-          <div class="footer-column">
-            <h4>Về chúng tôi</h4>
-            <ul>
-              <li>Câu chuyện thương hiệu</li>
-              <li>Hệ thống cửa hàng</li>
-              <li>Tuyển dụng</li>
-              <li>Liên hệ</li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Chính sách</h4>
-            <ul>
-              <li>Chính sách bảo mật</li>
-              <li>Điều khoản sử dụng</li>
-              <li>Chính sách giao hàng</li>
-              <li>Chính sách đổi trả</li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Đăng ký bản tin</h4>
-            <p>Nhận thông tin khuyến mãi và mẹo vặt sức khỏe hàng tuần.</p>
-            <form class="newsletter-form">
-              <input type="email" placeholder="Email của bạn" />
-              <button type="submit">Gửi</button>
-            </form>
-          </div>
-        </div>
-        <div class="footer-bottom">© 2026 GreenMart. Tất cả quyền được bảo lưu.</div>
-      </footer>
-    </div>
-
-    <script src="./js/products.js"></script>
-  </body>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GreenMart - Sản phẩm sạch</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="./css/base.css" rel="stylesheet"/>
+<link href="./css/components.css" rel="stylesheet"/>
+<link href="./css/products.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-shell">
+<header class="topbar">
+<a aria-label="GreenMart home" class="brand" href="../index.html">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M12 3 4 7v5c0 5 3.6 8.4 8 9 4.4-.6 8-4 8-9V7l-8-4Z" fill="currentColor"></path>
+</svg>
+<span>GreenMart</span>
+</a>
+<nav aria-label="Primary navigation" class="main-nav">
+<a href="../index.html">Trang chủ</a>
+<a class="active" href="san-pham.html">Sản phẩm</a>
+<a href="../tin-tuc.html">Tin tức</a>
+<a href="../lien-he.html">Liên hệ</a>
+</nav>
+<div class="topbar-actions">
+<label class="search-pill">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M10.5 4a6.5 6.5 0 1 0 4.16 11.16l4.34 4.34 1.42-1.42-4.34-4.34A6.5 6.5 0 0 0 10.5 4Zm0 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z" fill="currentColor"></path>
+</svg>
+<input placeholder="Bạn đang tìm sản phẩm gì?" type="text"/>
+</label>
+<button aria-label="Thông báo" class="icon-button" type="button">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 3a4 4 0 0 0-4 4v1.2c0 .7-.2 1.4-.6 2L6 11.2V13h12v-1.8l-1.4-1.6a3.6 3.6 0 0 1-.6-2V7a4 4 0 0 0-4-4Zm0 18a2.6 2.6 0 0 0 2.5-2h-5A2.6 2.6 0 0 0 12 21Z" fill="currentColor"></path></svg>
+</button>
+<button aria-label="Yêu thích" class="icon-button" type="button">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 20.4 4.9 13.8a4.6 4.6 0 0 1 0-6.5 4.6 4.6 0 0 1 6.5 0l.6.6.6-.6a4.6 4.6 0 0 1 6.5 0 4.6 4.6 0 0 1 0 6.5L12 20.4Z" fill="currentColor"></path></svg>
+</button>
+<button aria-label="Giỏ hàng" class="icon-button cart-button" type="button">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 5h14l-1.3 6.6a2 2 0 0 1-2 1.6H9.8a2 2 0 0 1-1.9-1.5L6.2 4H3V2h4l.2 1.2L7 5Zm3 15a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm7 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"></path></svg>
+<span class="cart-badge">3</span>
+</button>
+</div>
+</header>
+<main class="catalog-content">
+<section class="catalog-top">
+<div aria-label="breadcrumb" class="breadcrumbs">
+<a href="../index.html">Trang chủ</a>
+<span>/</span>
+<span class="current">Sản phẩm</span>
+</div>
+<div class="catalog-title-row">
+<h1>Sản phẩm sạch</h1>
+<label class="sort-control" for="sort-select">
+<span>Sắp xếp: </span>
+<select id="sort-select">
+<option value="newest">Mới nhất</option>
+<option value="price-asc">Giá thấp đến cao</option>
+<option value="price-desc">Giá cao đến thấp</option>
+<option value="rating">Đánh giá cao</option>
+</select>
+</label>
+</div>
+</section>
+<section class="catalog-layout">
+<aside aria-label="Bộ lọc sản phẩm" class="filters-sidebar">
+<div class="filter-group">
+<h3>Danh mục sản phẩm</h3>
+<label class="checkbox-row">
+<input checked="" type="checkbox"/>
+<span>Rau củ hữu cơ</span>
+</label>
+<label class="checkbox-row active">
+<input checked="" type="checkbox"/>
+<span>Thực phẩm tươi sống</span>
+</label>
+<label class="checkbox-row">
+<input type="checkbox"/>
+<span>Trái cây nhập khẩu</span>
+</label>
+<label class="checkbox-row">
+<input type="checkbox"/>
+<span>Sữa &amp; Đồ uống</span>
+</label>
+</div>
+<div class="filter-group">
+<h3>Khoảng giá</h3>
+<div class="price-range">
+<div class="range-track"></div>
+<div class="range-values">
+<span>0đ</span>
+<span>1.000.000đ+</span>
+</div>
+</div>
+</div>
+<div class="filter-group">
+<h3>Nguồn gốc</h3>
+<label class="checkbox-row">
+<input checked="" type="checkbox"/>
+<span>Trong nước (VietGAP)</span>
+</label>
+<label class="checkbox-row">
+<input type="checkbox"/>
+<span>Nhập khẩu chính ngạch</span>
+</label>
+</div>
+<div class="filter-group">
+<h3>Đánh giá</h3>
+<label class="checkbox-row">
+<input type="checkbox"/>
+<span>4.5 trở lên</span>
+</label>
+</div>
+</aside>
+<div class="products-section">
+<div class="product-grid" id="product-grid">
+<article class="product-card" data-category="thuc-pham-tuoi" data-new="true" data-price="155000" data-rating="4.8">
+<div class="card-media">
+<img alt="Thịt heo sạch" src="https://www.figma.com/api/mcp/asset/e1f98c3b-7f64-4d3a-9a17-2e7fbf8c5c27"/>
+<span class="badge badge-new">MỚI</span>
+<button aria-label="Yêu thích" class="wishlist-btn" type="button">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 20.4 4.9 13.8a4.6 4.6 0 0 1 0-6.5 4.6 4.6 0 0 1 6.5 0l.6.6.6-.6a4.6 4.6 0 0 1 6.5 0 4.6 4.6 0 0 1 0 6.5L12 20.4Z" fill="currentColor"></path></svg>
+</button>
+</div>
+<div class="card-body">
+<p class="category">THỰC PHẨM TƯƠI</p>
+<h4>Thịt heo sạch</h4>
+<div class="rating">★ 4.8 (120)</div>
+<div class="price-row">
+<strong>155.000đ</strong>
+<span>/kg</span>
+</div>
+<button class="add-btn" type="button">Thêm vào giỏ</button>
+</div>
+</article>
+<article class="product-card" data-category="hai-san" data-price="450000" data-rating="5" data-sale="true">
+<div class="card-media">
+<img alt="Cá hồi Na Uy" src="https://www.figma.com/api/mcp/asset/abc2406a-f47f-42c1-9214-40c850ab61e0"/>
+<span class="badge badge-sale">-15%</span>
+</div>
+<div class="card-body">
+<p class="category">HẢI SẢN NHẬP KHẨU</p>
+<h4>Cá hồi Na Uy</h4>
+<div class="rating">★ 5.0 (86)</div>
+<div class="price-row">
+<strong>450.000đ</strong>
+<span>/kg</span>
+<small>530.000đ</small>
+</div>
+<button class="add-btn" type="button">Thêm vào giỏ</button>
+</div>
+</article>
+<article class="product-card" data-category="trung" data-price="45000" data-rating="4.9">
+<div class="card-media">
+<img alt="Trứng gà thả vườn" src="https://www.figma.com/api/mcp/asset/323106c8-d3b5-49a4-af1a-7d803ef4433f"/>
+</div>
+<div class="card-body">
+<p class="category">TRỨNG &amp; BƠ SỮA</p>
+<h4>Trứng gà thả vườn</h4>
+<div class="rating">★ 4.9 (215)</div>
+<div class="price-row">
+<strong>45.000đ</strong>
+<span>/vỉ 10 quả</span>
+</div>
+<button class="add-btn" type="button">Thêm vào giỏ</button>
+</div>
+</article>
+<article class="product-card" data-category="sua" data-price="32000" data-rating="4.7">
+<div class="card-media">
+<img alt="Sữa tươi không đường" src="https://www.figma.com/api/mcp/asset/68d3742d-577a-4b8c-a05d-b84d1d3bfcbc"/>
+</div>
+<div class="card-body">
+<p class="category">SỮA &amp; ĐỒ UỐNG</p>
+<h4>Sữa tươi thanh</h4>
+<div class="rating">★ 4.7 (54)</div>
+<div class="price-row">
+<strong>32.000đ</strong>
+<span>/chai 500ml</span>
+</div>
+<button class="add-btn" type="button">Thêm vào giỏ</button>
+</div>
+</article>
+<article class="product-card" data-category="rau-cu" data-price="18000" data-rating="4.8">
+<div class="card-media">
+<img alt="Rau muống hữu cơ" src="https://www.figma.com/api/mcp/asset/aa794b31-2581-4281-b959-1ca54ac42920"/>
+</div>
+<div class="card-body">
+<p class="category">RAU CỦ HỮU CƠ</p>
+<h4>Rau muống hữu cơ</h4>
+<div class="rating">★ 4.8 (92)</div>
+<div class="price-row">
+<strong>18.000đ</strong>
+<span>/bó</span>
+</div>
+<button class="add-btn" type="button">Thêm vào giỏ</button>
+</div>
+</article>
+<article class="product-card" data-category="trai-cay" data-hot="true" data-price="890000" data-rating="5">
+<div class="card-media">
+<img alt="Nho mẫu đơn" src="https://www.figma.com/api/mcp/asset/d31ccf28-f20d-4c68-8bb4-445b17a877b2"/>
+<span class="badge badge-hot">HOT</span>
+</div>
+<div class="card-body">
+<p class="category">TRÁI CÂY NHẬP</p>
+<h4>Nho mẫu đơn</h4>
+<div class="rating">★ 5.0 (42)</div>
+<div class="price-row">
+<strong>890.000đ</strong>
+<span>/hộp 1kg</span>
+</div>
+<button class="add-btn" type="button">Thêm vào giỏ</button>
+</div>
+</article>
+</div>
+<div aria-label="Pagination" class="pagination">
+<button aria-label="Trang trước" class="page-btn" type="button">←</button>
+<button class="page-btn active" type="button">1</button>
+<button class="page-btn" type="button">2</button>
+<button class="page-btn" type="button">3</button>
+<span class="page-ellipsis">...</span>
+<button class="page-btn" type="button">12</button>
+<button aria-label="Trang sau" class="page-btn" type="button">→</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-grid">
+<div class="footer-column hero-column">
+<div class="brand brand-footer">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M12 3 4 7v5c0 5 3.6 8.4 8 9 4.4-.6 8-4 8-9V7l-8-4Z" fill="currentColor"></path>
+</svg>
+<span>GreenMart</span>
+</div>
+<p>Cung cấp thực phẩm sạch, an toàn và tươi ngon mỗi ngày từ trang trại đến bàn ăn của bạn.</p>
+<div class="social-links">
+<a aria-label="Facebook" href="#">f</a>
+<a aria-label="Instagram" href="#">in</a>
+<a aria-label="Email" href="#">✉</a>
+</div>
+</div>
+<div class="footer-column">
+<h4>Về chúng tôi</h4>
+<ul>
+<li>Câu chuyện thương hiệu</li>
+<li>Hệ thống cửa hàng</li>
+<li>Tuyển dụng</li>
+<li>Liên hệ</li>
+</ul>
+</div>
+<div class="footer-column">
+<h4>Chính sách</h4>
+<ul>
+<li>Chính sách bảo mật</li>
+<li>Điều khoản sử dụng</li>
+<li>Chính sách giao hàng</li>
+<li>Chính sách đổi trả</li>
+</ul>
+</div>
+<div class="footer-column">
+<h4>Đăng ký bản tin</h4>
+<p>Nhận thông tin khuyến mãi và mẹo vặt sức khỏe hàng tuần.</p>
+<form class="newsletter-form">
+<input placeholder="Email của bạn" type="email"/>
+<button type="submit">Gửi</button>
+</form>
+</div>
+</div>
+<div class="footer-bottom">© 2026 GreenMart. Tất cả quyền được bảo lưu.</div>
+</footer>
+</div>
+<script src="./js/products.js"></script>
+</body>
 </html>
